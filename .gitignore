@@ -1,0 +1,17 @@
+# Windows
+Thumbs.db
+desktop.ini
+
+# Serveur local PowerShell (inutile en production)
+serve.ps1
+
+# Dossier Claude Code
+.claude/
+
+# Document source Word (non nécessaire en prod)
+info animaux.docx
+*.docx
+
+# Fichiers temporaires
+*.tmp
+*.log

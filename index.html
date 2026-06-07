@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🐾 145 Animaux Extraordinaires</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🐾 145 Animaux Extraordinaires</h1>
+    <p>Découvre les super-pouvoirs secrets du règne animal !</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <button class="nav-btn active" data-view="explorer" onclick="switchView('explorer')">
+      🔍 Explorer
+    </button>
+    <button class="nav-btn" data-view="quiz" onclick="switchView('quiz')">
+      🧠 Quiz
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION EXPLORER
+  ═══════════════════════════════════════════ -->
+  <div id="explorer-section">
+
+    <!-- Search -->
+    <div class="search-bar">
+      <input id="search-input" type="text" placeholder="🔎 Recherche un animal..." autocomplete="off" />
+    </div>
+
+    <!-- Habitat Filters -->
+    <div class="filters" id="habitat-filters"></div>
+
+    <!-- Counter -->
+    <p class="counter" id="animal-counter">100 animaux trouvés</p>
+
+    <!-- Grid -->
+    <div class="grid" id="animal-grid"></div>
+
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION QUIZ
+  ═══════════════════════════════════════════ -->
+  <div id="quiz-section">
+    <div class="quiz-header">
+      <h2>🧠 Quiz — Vrai ou Faux ?</h2>
+      <p style="color:#636E72;font-size:0.95rem;margin-top:4px;">Teste tes connaissances sur les animaux !</p>
+    </div>
+
+    <!-- Score -->
+    <div class="score-display">
+      <div class="score-item">
+        <div class="score-num score-correct" id="score-correct">0</div>
+        <div class="score-label">✅ Bonnes</div>
+      </div>
+      <div class="score-item">
+        <div class="score-num score-wrong" id="score-wrong">0</div>
+        <div class="score-label">❌ Erreurs</div>
+      </div>
+    </div>
+
+    <!-- Progress -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+    </div>
+    <p style="text-align:center;font-size:0.85rem;color:#636E72;font-weight:700;margin-bottom:16px" id="q-number">Question 1 / 15</p>
+
+    <!-- Question Card -->
+    <div class="question-card" id="question-card">
+      <span class="question-animal" id="q-emoji">🦁</span>
+      <div class="question-animal-name" id="q-animal-name">Lion</div>
+      <div class="question-type-badge" id="q-type">🎯 Vrai ou Faux ?</div>
+      <div class="question-text" id="q-text">...</div>
+
+      <div class="answer-buttons">
+        <button class="answer-btn" id="btn-true" onclick="answer(true)">✅ Vrai</button>
+        <button class="answer-btn" id="btn-false" onclick="answer(false)">❌ Faux</button>
+      </div>
+
+      <div class="feedback-message" id="quiz-feedback"></div>
+      <button class="next-question-btn" id="next-btn" onclick="nextQuestion()">
+        Question suivante ➡️
+      </button>
+    </div>
+
+    <!-- End Screen -->
+    <div class="quiz-end" id="quiz-end">
+      <div class="trophy" id="trophy-emoji">🏆</div>
+      <h3 id="end-message">Bravo !</h3>
+      <div class="final-score" id="final-score">12 / 15</div>
+      <p id="final-pct">soit 80% de bonnes réponses</p>
+      <button class="restart-btn" onclick="startQuiz()">🔄 Rejouer !</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       MODAL FICHE ANIMAL
+  ═══════════════════════════════════════════ -->
+  <div class="modal-overlay" id="animal-modal">
+    <div class="modal">
+      <div class="modal-header" id="modal-header">
+        <button class="close-btn" onclick="closeModal()">✕</button>
+        <span class="big-emoji" id="modal-emoji">🦁</span>
+        <h2 id="modal-name">Lion</h2>
+        <span class="habitat-badge" id="modal-habitat">🌾 Savane</span>
+      </div>
+
+      <div class="modal-body">
+
+        <!-- Fiche rapide -->
+        <div class="info-grid">
+          <div class="info-pill pill-classe">
+            <span class="pill-icon">🔬</span>
+            <span class="pill-label">Classe</span>
+            <span class="pill-value" id="modal-classe"></span>
+          </div>
+          <div class="info-pill">
+            <span class="pill-icon">⚖️</span>
+            <span class="pill-label">Poids</span>
+            <span class="pill-value" id="modal-weight"></span>
+          </div>
+          <div class="info-pill">
+            <span class="pill-icon">🌍</span>
+            <span class="pill-label">Origine</span>
+            <span class="pill-value" id="modal-origin"></span>
+          </div>
+          <div class="info-pill">
+            <span class="pill-icon">🍽️</span>
+            <span class="pill-label">Alimentation</span>
+            <span class="pill-value" id="modal-diet"></span>
+          </div>
+          <div class="info-pill">
+            <span class="pill-icon">👥</span>
+            <span class="pill-label">Vie sociale</span>
+            <span class="pill-value" id="modal-social"></span>
+          </div>
+          <div class="info-pill">
+            <span class="pill-icon">⏳</span>
+            <span class="pill-label">Espérance de vie</span>
+            <span class="pill-value" id="modal-lifespan"></span>
+          </div>
+        </div>
+
+        <div class="info-block superpower-block">
+          <div class="label">⚡ Super-Pouvoir</div>
+          <div class="content" id="modal-superpower"></div>
+        </div>
+        <div class="info-block fact-block">
+          <div class="label">💡 Le sais-tu ?</div>
+          <div class="content" id="modal-fact"></div>
+        </div>
+      </div>
+
+      <div class="modal-nav">
+        <button class="btn-prev" onclick="navigateModal(-1)">← Précédent</button>
+        <button class="btn-next" onclick="navigateModal(1)">Suivant →</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="animals.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
