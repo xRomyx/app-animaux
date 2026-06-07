@@ -124,6 +124,37 @@ function navigateModal(dir) {
   openModal(next.id);
 }
 
+// ── TEXT TO SPEECH ──
+function speakText(text) {
+  if (!window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = 'fr-FR';
+  utterance.rate = 0.88;
+  utterance.pitch = 1.05;
+  window.speechSynthesis.speak(utterance);
+}
+
+// Lecture vocale : clic sur une pill ou un bloc info
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.modal-body').addEventListener('click', e => {
+    // Pill (classe, poids, origine…)
+    const pill = e.target.closest('.info-pill');
+    if (pill) {
+      const label = pill.querySelector('.pill-label')?.textContent || '';
+      const value = pill.querySelector('.pill-value')?.textContent || '';
+      if (value && value !== '—') speakText(`${label} : ${value}`);
+      return;
+    }
+    // Bloc super-pouvoir ou fait
+    const block = e.target.closest('.info-block');
+    if (block) {
+      const content = block.querySelector('.content')?.textContent || '';
+      if (content) speakText(content);
+    }
+  });
+});
+
 function shadeColor(hex, percent) {
   const num = parseInt(hex.replace('#', ''), 16);
   const r = Math.min(255, Math.max(0, (num >> 16) + percent));
