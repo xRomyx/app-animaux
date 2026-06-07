@@ -111,11 +111,11 @@ function openModal(id) {
   document.getElementById('modal-name').textContent = a.name;
   document.getElementById('modal-habitat').textContent = `${a.habitatEmoji} ${a.habitat}`;
   document.getElementById('modal-classe').textContent = a.classe || '—';
-  document.getElementById('modal-weight').textContent = a.weight || '—';
+  document.getElementById('modal-weight').textContent = fixRange(a.weight || '—');
   document.getElementById('modal-origin').textContent = a.origin || '—';
   document.getElementById('modal-diet').textContent = a.diet || '—';
-  document.getElementById('modal-social').textContent = a.social || '—';
-  document.getElementById('modal-lifespan').textContent = a.lifespan || '—';
+  document.getElementById('modal-social').textContent = fixRange(a.social || '—');
+  document.getElementById('modal-lifespan').textContent = fixRange(a.lifespan || '—');
   document.getElementById('modal-superpower').textContent = a.superpower;
   document.getElementById('modal-fact').textContent = a.fact;
 
@@ -167,6 +167,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// Remplace les tirets de plage numérique par "à" (ex: "10-14 ans" → "10 à 14 ans")
+function fixRange(text) {
+  return text.replace(/(\d)\s*-\s*(\d)/g, '$1 à $2');
+}
 
 // Détecte si une couleur hex est claire (luminosité > 60%)
 function isLightColor(hex) {
