@@ -139,9 +139,11 @@ function navigateModal(dir) {
 function speakText(text) {
   if (!window.speechSynthesis) return;
   window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
+  // Remplace les tirets de plage numérique (ex: "10-14") par "à"
+  const cleaned = text.replace(/(\d)\s*-\s*(\d)/g, '$1 à $2');
+  const utterance = new SpeechSynthesisUtterance(cleaned);
   utterance.lang = 'fr-FR';
-  utterance.rate = 0.88;
+  utterance.rate = 0.75;
   utterance.pitch = 1.05;
   window.speechSynthesis.speak(utterance);
 }
