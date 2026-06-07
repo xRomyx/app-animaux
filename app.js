@@ -173,6 +173,18 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeModal();
 });
 
+// Clic sur la question pour la relire
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('q-text').addEventListener('click', () => {
+    const text = document.getElementById('q-text').textContent;
+    if (text) speakText(text);
+  });
+  document.getElementById('quiz-feedback').addEventListener('click', () => {
+    const text = document.getElementById('quiz-feedback').textContent;
+    if (text) speakText(text);
+  });
+});
+
 // ── SEARCH ──
 document.getElementById('search-input').addEventListener('input', e => {
   searchQuery = e.target.value;
@@ -259,6 +271,9 @@ function renderQuestion() {
   document.getElementById('q-text').textContent = q.text;
   document.getElementById('q-type').textContent = '🎯 Vrai ou Faux ?';
 
+  // Lecture automatique de la question
+  speakText(q.text);
+
   const progress = (quiz.current / quiz.questions.length) * 100;
   document.getElementById('progress-fill').style.width = progress + '%';
   document.getElementById('q-number').textContent = `Question ${quiz.current + 1} / ${quiz.questions.length}`;
@@ -302,6 +317,9 @@ function answer(value) {
   feedback.textContent = q.explanation;
   feedback.className = 'feedback-message show ' + (isCorrect ? 'feedback-correct' : 'feedback-wrong');
 
+  // Lecture automatique du feedback
+  speakText(q.explanation);
+
   document.getElementById('next-btn').className = 'next-question-btn show';
 }
 
@@ -330,4 +348,7 @@ function showQuizEnd() {
   document.getElementById('end-message').textContent = msg;
   document.getElementById('final-score').textContent = `${quiz.correct} / ${quiz.questions.length}`;
   document.getElementById('final-pct').textContent = `soit ${pct}% de bonnes réponses`;
+
+  // Lecture du message final
+  speakText(`${msg} Tu as eu ${quiz.correct} bonnes réponses sur ${quiz.questions.length}, soit ${pct} pourcent.`);
 }

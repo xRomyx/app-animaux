@@ -343,6 +343,14 @@ nav {
   border-left: 4px solid #6C63FF;
 }
 
+/* Texte de question & feedback cliquables */
+.question-text, .feedback-message {
+  cursor: pointer;
+}
+.question-text:hover {
+  opacity: 0.85;
+}
+
 /* Pills & blocs cliquables pour la lecture vocale */
 .info-pill, .info-block {
   cursor: pointer;
