@@ -316,8 +316,12 @@ function answer(value) {
   feedback.textContent = q.explanation;
   feedback.className = 'feedback-message show ' + (isCorrect ? 'feedback-correct' : 'feedback-wrong');
 
-  // Lecture automatique du feedback
-  speakText(q.explanation);
+  // Lecture automatique du feedback : "Bravo !" si correct, explication complète si faux
+  if (isCorrect) {
+    speakText('Bravo ! C\'est vrai !');
+  } else {
+    speakText(q.explanation.replace(/^❌\s*/, ''));
+  }
 
   document.getElementById('next-btn').className = 'next-question-btn show';
 }
