@@ -173,12 +173,14 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeModal();
 });
 
-// Clic sur la question pour la relire
+// Bouton écouter le quiz
+function speakQuizQuestion() {
+  const text = document.getElementById('q-text').textContent;
+  if (text) speakText(text);
+}
+
+// Clic sur le feedback pour le relire
 document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('q-text').addEventListener('click', () => {
-    const text = document.getElementById('q-text').textContent;
-    if (text) speakText(text);
-  });
   document.getElementById('quiz-feedback').addEventListener('click', () => {
     const text = document.getElementById('quiz-feedback').textContent;
     if (text) speakText(text);
@@ -270,9 +272,6 @@ function renderQuestion() {
   document.getElementById('q-animal-name').textContent = q.animal.name;
   document.getElementById('q-text').textContent = q.text;
   document.getElementById('q-type').textContent = '🎯 Vrai ou Faux ?';
-
-  // Lecture automatique de la question
-  speakText(q.text);
 
   const progress = (quiz.current / quiz.questions.length) * 100;
   document.getElementById('progress-fill').style.width = progress + '%';

@@ -343,12 +343,31 @@ nav {
   border-left: 4px solid #6C63FF;
 }
 
-/* Texte de question & feedback cliquables */
-.question-text, .feedback-message {
+/* Bouton écouter la question du quiz */
+.quiz-speak-btn {
+  background: none;
+  border: 2px solid #b2bec3;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 0.95rem;
   cursor: pointer;
+  color: #636E72;
+  margin: 6px auto 2px;
+  display: block;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
 }
-.question-text:hover {
-  opacity: 0.85;
+.quiz-speak-btn:hover {
+  background: #f0f4ff;
+  border-color: #6C63FF;
+  color: #6C63FF;
+}
+.quiz-speak-btn:active {
+  transform: scale(0.96);
+}
+
+/* Feedback cliquable */
+.feedback-message {
+  cursor: pointer;
 }
 
 /* Pills & blocs cliquables pour la lecture vocale */
