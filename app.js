@@ -91,6 +91,17 @@ function openModal(id) {
   const header = document.getElementById('modal-header');
 
   header.style.background = `linear-gradient(135deg, ${a.color}, ${shadeColor(a.color, -20)})`;
+
+  // Adapter la couleur du texte selon la luminosité du fond
+  const isLight = isLightColor(a.color);
+  const textColor = isLight ? '#1a1a1a' : 'white';
+  const shadowColor = isLight ? 'rgba(255,255,255,0.4)' : 'rgba(0,0,0,0.2)';
+  header.style.color = textColor;
+  document.getElementById('modal-name').style.color = textColor;
+  document.getElementById('modal-name').style.textShadow = `1px 1px 0 ${shadowColor}`;
+  document.getElementById('modal-habitat').style.color = textColor;
+  document.getElementById('modal-habitat').style.background = isLight ? 'rgba(0,0,0,0.12)' : 'rgba(255,255,255,0.3)';
+
   const emojiEl = document.getElementById('modal-emoji');
   if (a.image) {
     emojiEl.innerHTML = `<img class="modal-photo" src="${a.image}" alt="${a.name}" />`;
@@ -154,6 +165,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// Détecte si une couleur hex est claire (luminosité > 60%)
+function isLightColor(hex) {
+  const num = parseInt(hex.replace('#', ''), 16);
+  const r = (num >> 16) & 0xFF;
+  const g = (num >> 8) & 0xFF;
+  const b = num & 0xFF;
+  // Luminance perçue (formule standard)
+  const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+  return luminance > 0.6;
+}
 
 function shadeColor(hex, percent) {
   const num = parseInt(hex.replace('#', ''), 16);
