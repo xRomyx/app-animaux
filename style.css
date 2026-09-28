@@ -260,9 +260,11 @@ nav {
   animation: bounce 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-/* Fiche avec photo : la photo remplit le bandeau */
+/* Fiche avec photo : la photo remplit le bandeau.
+   Proportion fixe 16:9 → même cadrage sur téléphone et sur ordinateur (imagePos réglé pour ce format) */
 .modal-header.has-photo {
-  min-height: 210px;
+  aspect-ratio: 16 / 9;
+  flex-shrink: 0;
 }
 
 .modal-header.has-photo .big-emoji {
@@ -284,6 +286,13 @@ nav {
   font-size: 1.8rem;
   font-weight: 900;
   color: var(--text);
+}
+
+/* Haut-parleur toujours visible : indique qu'on peut appuyer pour écouter */
+.modal-title h2::after {
+  content: '\00a0🔊';          /* espace insécable : l'icône reste collée au dernier mot */
+  font-size: 1.1rem;
+  vertical-align: middle;
 }
 
 .modal-title .habitat-badge {
