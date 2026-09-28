@@ -1,4 +1,4 @@
-const CACHE = 'animaux-v3';
+const CACHE = 'animaux-v4';
 const ASSETS = [
   '/',
   '/index.html',

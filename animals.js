@@ -410,7 +410,8 @@ const ANIMALS = [
     fact:"Une abeille produit une cuillère à café de miel dans toute sa vie.",
     color:"#FFD700",weight:"80-100 mg",origin:"Afrique + Europe + Asie occidentale (introduite partout)",
     diet:"Nectar, pollen, propolis",
-    social:"En colonie structurée (50 000-80 000)",lifespan:"Reine 2-5 ans — Ouvrière 6 semaines"
+    social:"En colonie structurée (50 000-80 000)",lifespan:"Reine 2-5 ans — Ouvrière 6 semaines",
+    image:"img/abeille-domestique.jpg"
   },
   {
     id:47,name:"Flamant rose",emoji:"🦩",habitat:"Zones humides",habitatEmoji:"💧",
@@ -418,7 +419,8 @@ const ANIMALS = [
     fact:"Le flamant est blanc à la naissance. Son rose vient des pigments des algues qu'il mange.",
     color:"#FF69B4",weight:"2-4 kg",origin:"Méditerranée, Afrique, Asie du Sud, Caraïbes",
     diet:"Algues, crevettes, larves, mollusques (filtration)",
-    social:"En grandes colonies (parfois 1 million !)",lifespan:"20-30 ans (sauvage)"
+    social:"En grandes colonies (parfois 1 million !)",lifespan:"20-30 ans (sauvage)",
+    image:"img/flamant-rose.jpg"
   },
   {
     id:48,name:"Autruche",emoji:"🦤",habitat:"Savane",habitatEmoji:"🌾",
@@ -426,7 +428,8 @@ const ANIMALS = [
     fact:"L'autruche a les yeux plus gros que son cerveau !",
     color:"#8B4513",weight:"63-145 kg",origin:"Afrique subsaharienne (savane + désert)",
     diet:"Graines, plantes, racines, insectes, lézards",
-    social:"En groupes (5-50)",lifespan:"30-40 ans"
+    social:"En groupes (5-50)",lifespan:"30-40 ans",
+    image:"img/autruche.jpg"
   },
   {
     id:49,name:"Perroquet Ara",emoji:"🦜",habitat:"Forêt amazonienne",habitatEmoji:"🌳",
@@ -434,7 +437,8 @@ const ANIMALS = [
     fact:"L'ara vit jusqu'à 80 ans — autant qu'un être humain !",
     color:"#FF0000",weight:"900-1 700 g",origin:"Mexique → Amazonie",
     diet:"Fruits, noix, graines, fleurs, argile (pour les minéraux)",
-    social:"En couple + petits groupes (10-30)",lifespan:"40-80 ans"
+    social:"En couple + petits groupes (10-30)",lifespan:"40-80 ans",
+    image:"img/perroquet-ara.jpg"
   },
   {
     id:50,name:"Paon",emoji:"🦚",habitat:"Asie du Sud",habitatEmoji:"🌿",
@@ -442,7 +446,8 @@ const ANIMALS = [
     fact:"Le paon peut afficher jusqu'à 200 plumes dans sa roue, chacune avec un œil.",
     color:"#008080",weight:"4-6 kg",origin:"Inde, Sri Lanka (introduit partout)",
     diet:"Graines, insectes, baies, petits reptiles, grenouilles",
-    social:"En harem (1 mâle + 3-5 femelles)",lifespan:"15-20 ans"
+    social:"En harem (1 mâle + 3-5 femelles)",lifespan:"15-20 ans",
+    image:"img/paon.jpg"
   },
   {
     id:51,name:"Dragon de Komodo",emoji:"🦎",habitat:"Indonésie",habitatEmoji:"🏝️",
@@ -450,7 +455,8 @@ const ANIMALS = [
     fact:"La femelle komodo peut se reproduire sans mâle par parthénogenèse !",
     color:"#808000",weight:"70-90 kg",origin:"Îles de Komodo, Rinca, Flores (Indonésie)",
     diet:"Cerfs, buffles, chèvres, cochons sauvages, charognes",
-    social:"Solitaire (cannibale à l'occasion)",lifespan:"30 ans"
+    social:"Solitaire (cannibale à l'occasion)",lifespan:"30 ans",
+    image:"img/dragon-de-komodo.jpg"
   },
   {
     id:52,name:"Anaconda vert",emoji:"🐍",habitat:"Amazonie",habitatEmoji:"🌳",
@@ -458,7 +464,8 @@ const ANIMALS = [
     fact:"L'anaconda n'est pas venimeux — il tue en étouffant ses proies.",
     color:"#2E8B57",weight:"30-250 kg",origin:"Amazonie, Orénoque, Guyanes",
     diet:"Caïmans, capybaras, cerfs, pécaris, oiseaux",
-    social:"Solitaire",lifespan:"10-30 ans"
+    social:"Solitaire",lifespan:"10-30 ans",
+    image:"img/anaconda-vert.jpg"
   },
   {
     id:53,name:"Cobra royal",emoji:"🐍",habitat:"Asie du Sud-Est",habitatEmoji:"🌴",
@@ -466,7 +473,8 @@ const ANIMALS = [
     fact:"Le cobra royal est le seul serpent à construire un nid pour ses œufs.",
     color:"#8B6914",weight:"6-9 kg",origin:"Inde, Asie du Sud-Est, Philippines",
     diet:"Serpents (90% de son régime !), lézards, petits mammifères",
-    social:"Solitaire (couple en saison)",lifespan:"20 ans"
+    social:"Solitaire (couple en saison)",lifespan:"20 ans",
+    image:"img/cobra-royal.jpg"
   },
   {
     id:54,name:"Cœlacanthe",emoji:"🐟",habitat:"Océan profond",habitatEmoji:"🌑",
@@ -474,7 +482,8 @@ const ANIMALS = [
     fact:"Le cœlacanthe utilise ses nageoires comme des pattes pour marcher sur le fond marin.",
     color:"#4B0082",weight:"80 kg",origin:"Comores, Afrique du Sud, Indonésie (2 populations distinctes)",
     diet:"Poissons, céphalopodes, méduses",
-    social:"Petits groupes dans les grottes",lifespan:"60+ ans"
+    social:"Petits groupes dans les grottes",lifespan:"60+ ans",
+    image:"img/coelacanthe.jpg"
   },
   {
     id:55,name:"Requin baleine",emoji:"🦈",habitat:"Océan tropical",habitatEmoji:"🌊",
@@ -482,7 +491,8 @@ const ANIMALS = [
     fact:"Le requin baleine a des dents sur ses yeux pour les protéger !",
     color:"#1C6BA0",weight:"18-22 tonnes",origin:"Océans tropicaux et subtropicaux mondiaux",
     diet:"Plancton, krill, petits poissons, œufs de poissons",
-    social:"Solitaire (rassemblements saisonniers)",lifespan:"70-130 ans"
+    social:"Solitaire (rassemblements saisonniers)",lifespan:"70-130 ans",
+    image:"img/requin-baleine.jpg"
   },
   {
     id:56,name:"Raie manta",emoji:"🐟",habitat:"Océan tropical",habitatEmoji:"🌊",
@@ -490,7 +500,8 @@ const ANIMALS = [
     fact:"La raie manta saute hors de l'eau et retombe avec un bruit de claque pour communiquer.",
     color:"#2F4F4F",weight:"1-2 tonnes",origin:"Océans tropicaux et subtropicaux mondiaux",
     diet:"Zooplancton, krill, petits poissons",
-    social:"Solitaire ou en groupes lâches",lifespan:"40+ ans"
+    social:"Solitaire ou en groupes lâches",lifespan:"40+ ans",
+    image:"img/raie-manta.jpg"
   },
   {
     id:57,name:"Hippocampe",emoji:"🐠",habitat:"Océan",habitatEmoji:"🌊",
@@ -498,7 +509,8 @@ const ANIMALS = [
     fact:"L'hippocampe se déplace en position verticale — unique chez les poissons.",
     color:"#FFD700",weight:"1-150 g",origin:"Eaux côtières tropicales et tempérées mondiales",
     diet:"Crevettes mysidacées, copépodes, larves de poissons",
-    social:"En couple fidèle",lifespan:"1-5 ans"
+    social:"En couple fidèle",lifespan:"1-5 ans",
+    image:"img/hippocampe.jpg"
   },
   {
     id:58,name:"Poisson-globe",emoji:"🐡",habitat:"Océan tropical",habitatEmoji:"🌊",
@@ -506,7 +518,8 @@ const ANIMALS = [
     fact:"Au Japon, le poisson-globe (fugu) se mange — préparé par un chef certifié !",
     color:"#FFA500",weight:"0,5-10 kg",origin:"Océans tropicaux et subtropicaux mondiaux",
     diet:"Coquillages, oursins, crabes, algues",
-    social:"Solitaire",lifespan:"5-10 ans"
+    social:"Solitaire",lifespan:"5-10 ans",
+    image:"img/poisson-globe.jpg"
   },
   {
     id:59,name:"Pieuvre mimique",emoji:"🐙",habitat:"Océan Indo-Pacifique",habitatEmoji:"🌊",
@@ -514,7 +527,8 @@ const ANIMALS = [
     fact:"La pieuvre mimique est considérée comme l'animal le plus intelligent de l'océan.",
     color:"#8B4513",weight:"300-600 g",origin:"Eaux peu profondes d'Asie du SE (Indonésie, Philippines)",
     diet:"Poissons, crabes, vers, crevettes",
-    social:"Solitaire",lifespan:"9-15 mois"
+    social:"Solitaire",lifespan:"9-15 mois",
+    image:"img/pieuvre-mimique.jpg"
   },
   {
     id:60,name:"Crabe de cocotier",emoji:"🦀",habitat:"Îles du Pacifique",habitatEmoji:"🏝️",
@@ -522,7 +536,8 @@ const ANIMALS = [
     fact:"Le crabe de cocotier peut grimper aux palmiers et vivre 40 ans.",
     color:"#FF6347",weight:"1-4 kg",origin:"Îles du Pacifique et de l'Océan Indien",
     diet:"Noix de coco, fruits, charognes, oiseaux (parfois !)",
-    social:"Solitaire (nocturne)",lifespan:"40-60 ans"
+    social:"Solitaire (nocturne)",lifespan:"40-60 ans",
+    image:"img/crabe-de-cocotier.jpg"
   },
   {
     id:61,name:"Scorpion",emoji:"🦂",habitat:"Désert",habitatEmoji:"🏜️",
@@ -530,7 +545,8 @@ const ANIMALS = [
     fact:"Le scorpion est l'un des animaux les plus anciens : ses ancêtres vivaient il y a 430 millions d'ans.",
     color:"#DAA520",weight:"10-60 g",origin:"Tous les continents sauf Antarctique",
     diet:"Insectes, araignées, petits rongeurs, lézards",
-    social:"Solitaire",lifespan:"4-25 ans"
+    social:"Solitaire",lifespan:"4-25 ans",
+    image:"img/scorpion.jpg"
   },
   {
     id:62,name:"Libellule",emoji:"🪲",habitat:"Zones humides",habitatEmoji:"💧",
@@ -538,7 +554,8 @@ const ANIMALS = [
     fact:"La libellule existait avant les dinosaures. À l'époque, elle avait 70 cm d'envergure !",
     color:"#00CED1",weight:"0,3-3 g",origin:"Monde entier sauf Antarctique",
     diet:"Moustiques, mouches, papillons, abeilles en vol",
-    social:"Solitaire (territorial)",lifespan:"Larve 1-4 ans — Adulte quelques semaines"
+    social:"Solitaire (territorial)",lifespan:"Larve 1-4 ans — Adulte quelques semaines",
+    image:"img/libellule.jpg"
   },
   {
     id:63,name:"Fourmi coupeuse de feuilles",emoji:"🐜",habitat:"Forêt tropicale",habitatEmoji:"🌴",
@@ -546,7 +563,8 @@ const ANIMALS = [
     fact:"Sa colonie peut compter 8 millions d'individus avec des rôles précis comme une ville.",
     color:"#8B4513",weight:"1-2 mg",origin:"Amérique centrale + du Sud",
     diet:"Champignons cultivés sur les feuilles découpées",
-    social:"En colonie géante (1-8 millions + reine)",lifespan:"Reine 20 ans — Ouvrière 1-2 mois"
+    social:"En colonie géante (1-8 millions + reine)",lifespan:"Reine 20 ans — Ouvrière 1-2 mois",
+    image:"img/fourmi-coupeuse-de-feuilles.jpg"
   },
   {
     id:64,name:"Termite",emoji:"🪲",habitat:"Savane & Forêt",habitatEmoji:"🌿",
@@ -554,7 +572,8 @@ const ANIMALS = [
     fact:"Les termites digèrent le bois grâce à des micro-organismes dans leur intestin.",
     color:"#D2691E",weight:"1-50 mg",origin:"Zones tropicales et subtropicales mondiales",
     diet:"Bois, cellulose, champignons, détritus",
-    social:"En colonie (jusqu'à 3 millions + roi + reine)",lifespan:"Reine 50 ans ! — Ouvrière 1-2 ans"
+    social:"En colonie (jusqu'à 3 millions + roi + reine)",lifespan:"Reine 50 ans ! — Ouvrière 1-2 ans",
+    image:"img/termite.jpg"
   },
   {
     id:65,name:"Martin-pêcheur",emoji:"🐦",habitat:"Rivières",habitatEmoji:"💧",
@@ -562,7 +581,8 @@ const ANIMALS = [
     fact:"Le martin-pêcheur est si rapide qu'on voit souvent juste un éclair bleu.",
     color:"#4169E1",weight:"34-46 g",origin:"Europe, Asie, Afrique du Nord",
     diet:"Poissons, insectes aquatiques, crevettes d'eau douce",
-    social:"Solitaire (couple pour nidifier)",lifespan:"5-7 ans"
+    social:"Solitaire (couple pour nidifier)",lifespan:"5-7 ans",
+    image:"img/martin-pecheur.jpg"
   },
   {
     id:66,name:"Manchot des Galápagos",emoji:"🐧",habitat:"Îles Galápagos",habitatEmoji:"🏝️",
@@ -570,7 +590,8 @@ const ANIMALS = [
     fact:"C'est le manchot le plus rare au monde, avec seulement 1 200 individus.",
     color:"#000000",weight:"2-2,5 kg",origin:"Îles Galápagos (Équateur)",
     diet:"Petits poissons (mullets, sardines, anchois)",
-    social:"En petits groupes + couples stables",lifespan:"15-20 ans"
+    social:"En petits groupes + couples stables",lifespan:"15-20 ans",
+    image:"img/manchot-des-galapagos.jpg"
   },
   {
     id:67,name:"Iguane marin",emoji:"🦎",habitat:"Îles Galápagos",habitatEmoji:"🏝️",
@@ -578,7 +599,8 @@ const ANIMALS = [
     fact:"Pour éliminer le sel de l'eau de mer, il l'éternue par le nez comme un spray !",
     color:"#4A4A4A",weight:"0,5-13 kg",origin:"Îles Galápagos (Équateur)",
     diet:"Algues marines (plonge jusqu'à 30 m pour les cueillir)",
-    social:"En grands groupes (thermorégulation collective)",lifespan:"25-30 ans"
+    social:"En grands groupes (thermorégulation collective)",lifespan:"25-30 ans",
+    image:"img/iguane-marin.jpg"
   },
   {
     id:68,name:"Fennec",emoji:"🦊",habitat:"Désert du Sahara",habitatEmoji:"🏜️",
@@ -586,7 +608,8 @@ const ANIMALS = [
     fact:"Le fennec peut passer toute sa vie sans boire — il tire l'eau de sa nourriture.",
     color:"#F5DEB3",weight:"0,7-1,6 kg",origin:"Sahara + péninsule arabique",
     diet:"Insectes, lézards, œufs, petits rongeurs, fruits",
-    social:"En groupes familiaux (jusqu'à 10)",lifespan:"10-14 ans"
+    social:"En groupes familiaux (jusqu'à 10)",lifespan:"10-14 ans",
+    image:"img/fennec.jpg"
   },
   {
     id:69,name:"Diable de Tasmanie",emoji:"🐾",habitat:"Tasmanie",habitatEmoji:"🌿",
@@ -594,7 +617,8 @@ const ANIMALS = [
     fact:"Il pousse des cris si stridents et effrayants que les premiers colons croyaient au diable.",
     color:"#8B0000",weight:"4-14 kg",origin:"Tasmanie (Australie)",
     diet:"Charognes, wombats, wallabys, serpents, oiseaux",
-    social:"Solitaire (nocturne)",lifespan:"5-6 ans (sauvage)"
+    social:"Solitaire (nocturne)",lifespan:"5-6 ans (sauvage)",
+    image:"img/diable-de-tasmanie.jpg"
   },
   {
     id:70,name:"Vautour",emoji:"🦅",habitat:"Savane & Montagnes",habitatEmoji:"⛰️",
@@ -602,7 +626,8 @@ const ANIMALS = [
     fact:"Le vautour peut planer des heures sans battre des ailes grâce aux courants chauds.",
     color:"#696969",weight:"4-12 kg",origin:"Afrique, Asie, Europe, Amériques",
     diet:"Charognes exclusivement (nettoyeur de la nature)",
-    social:"En groupes sur les carcasses (parfois des centaines)",lifespan:"20-30 ans"
+    social:"En groupes sur les carcasses (parfois des centaines)",lifespan:"20-30 ans",
+    image:"img/vautour.jpg"
   },
   {
     id:71,name:"Manchot Adélie",emoji:"🐧",habitat:"Antarctique",habitatEmoji:"🧊",
@@ -610,7 +635,8 @@ const ANIMALS = [
     fact:"Le manchot Adélie offre des cailloux à son amoureux pour construire le nid.",
     color:"#2F4F4F",weight:"3,6-6 kg",origin:"Antarctique et îles sub-antarctiques",
     diet:"Krill, poissons, calmars",
-    social:"En colonie (jusqu'à 500 000 couples !)",lifespan:"11-20 ans"
+    social:"En colonie (jusqu'à 500 000 couples !)",lifespan:"11-20 ans",
+    image:"img/manchot-adelie.jpg"
   },
   {
     id:72,name:"Poulpe géant du Pacifique",emoji:"🐙",habitat:"Océan Pacifique",habitatEmoji:"🌊",
@@ -618,7 +644,8 @@ const ANIMALS = [
     fact:"La plus grande pieuvre du monde : envergure jusqu'à 9 mètres !",
     color:"#DC143C",weight:"15-70 kg",origin:"Pacifique Nord — Alaska, Canada, Japon",
     diet:"Crabes royaux, homards, crevettes, petits requins",
-    social:"Solitaire",lifespan:"3-5 ans"
+    social:"Solitaire",lifespan:"3-5 ans",
+    image:"img/poulpe-geant-du-pacifique.jpg"
   },
   {
     id:73,name:"Pangolin",emoji:"🦔",habitat:"Afrique & Asie",habitatEmoji:"🌿",
@@ -626,7 +653,8 @@ const ANIMALS = [
     fact:"Le pangolin mange 70 millions de fourmis par an. Sa langue est plus longue que son corps !",
     color:"#8B7355",weight:"1,8-33 kg",origin:"Afrique subsaharienne + Asie du Sud et du SE",
     diet:"Fourmis, termites (70 millions par an !), larves",
-    social:"Solitaire (nocturne)",lifespan:"20+ ans"
+    social:"Solitaire (nocturne)",lifespan:"20+ ans",
+    image:"img/pangolin.jpg"
   },
   {
     id:74,name:"Okapi",emoji:"🦌",habitat:"Forêt du Congo",habitatEmoji:"🌿",
@@ -634,7 +662,8 @@ const ANIMALS = [
     fact:"L'okapi peut se lécher les oreilles et les yeux avec sa langue de 45 cm !",
     color:"#8B4513",weight:"200-350 kg",origin:"Forêt tropicale du Congo (RDC)",
     diet:"Feuilles, bourgeons, fruits, champignons, argile (minéraux)",
-    social:"Solitaire (sauf mère + petit)",lifespan:"20-30 ans"
+    social:"Solitaire (sauf mère + petit)",lifespan:"20-30 ans",
+    image:"img/okapi.jpg"
   },
   {
     id:75,name:"Aye-aye",emoji:"🐒",habitat:"Madagascar",habitatEmoji:"🌴",
@@ -642,7 +671,8 @@ const ANIMALS = [
     fact:"L'aye-aye est considéré comme un mauvais présage à Madagascar.",
     color:"#8B7355",weight:"1-2,7 kg",origin:"Madagascar (côtes est, forêts humides)",
     diet:"Larves de coléoptères, noix, fruits, champignons, nectar",
-    social:"Solitaire (nocturne)",lifespan:"20-23 ans"
+    social:"Solitaire (nocturne)",lifespan:"20-23 ans",
+    image:"img/aye-aye.jpg"
   },
   {
     id:76,name:"Tatou géant",emoji:"🦔",habitat:"Amazonie",habitatEmoji:"🌳",
@@ -650,7 +680,8 @@ const ANIMALS = [
     fact:"Le tatou est le seul mammifère à avoir une vraie armure osseuse !",
     color:"#A0A0A0",weight:"18-32 kg",origin:"Amazonie (Venezuela → Brésil → Argentine)",
     diet:"Fourmis, termites, vers, larves, serpents",
-    social:"Solitaire",lifespan:"25-30 ans"
+    social:"Solitaire",lifespan:"25-30 ans",
+    image:"img/tatou-geant.jpg"
   },
   {
     id:77,name:"Fourmilier géant",emoji:"🐾",habitat:"Amérique du Sud",habitatEmoji:"🌳",
@@ -658,7 +689,8 @@ const ANIMALS = [
     fact:"Le fourmilier n'a pas de dents — il avale les fourmis entières et les broie dans son estomac.",
     color:"#8B4513",weight:"29-65 kg",origin:"Amérique centrale et du Sud (savane + forêt)",
     diet:"35 000 fourmis et termites par jour !",
-    social:"Solitaire",lifespan:"14-16 ans (sauvage)"
+    social:"Solitaire",lifespan:"14-16 ans (sauvage)",
+    image:"img/fourmilier-geant.jpg"
   },
   {
     id:78,name:"Coucou gris",emoji:"🐦",habitat:"Europe & Asie",habitatEmoji:"🌲",
@@ -666,7 +698,8 @@ const ANIMALS = [
     fact:"Le poussin coucou, aveugle et nu, pousse les vrais œufs hors du nid dès sa naissance.",
     color:"#808080",weight:"105-130 g",origin:"Europe + Asie (hiverne en Afrique subsaharienne)",
     diet:"Chenilles velues (que les autres oiseaux évitent !) + insectes",
-    social:"Solitaire (parasite de nid)",lifespan:"6-12 ans"
+    social:"Solitaire (parasite de nid)",lifespan:"6-12 ans",
+    image:"img/coucou-gris.jpg"
   },
   {
     id:79,name:"Lézard à collerette",emoji:"🦎",habitat:"Australie",habitatEmoji:"🌿",
@@ -674,7 +707,8 @@ const ANIMALS = [
     fact:"Sa collerette peut mesurer 25 cm — presque aussi large que son corps.",
     color:"#8B6914",weight:"0,5-1 kg",origin:"Australie du Nord + Nouvelle-Guinée",
     diet:"Insectes, araignées, petits lézards, petits mammifères",
-    social:"Solitaire",lifespan:"10-20 ans"
+    social:"Solitaire",lifespan:"10-20 ans",
+    image:"img/lezard-a-collerette.jpg"
   },
   {
     id:80,name:"Bison d'Amérique",emoji:"🐃",habitat:"Prairies d'Amérique du Nord",habitatEmoji:"🌾",
@@ -682,7 +716,8 @@ const ANIMALS = [
     fact:"Au XIXe siècle, on comptait 60 millions de bisons. On les a réduits à 500 avant de les sauver.",
     color:"#8B4513",weight:"350-1 000 kg",origin:"Amérique du Nord (prairies des Grandes Plaines)",
     diet:"Herbes, plantes, lichens (20 kg/jour)",
-    social:"En hardes (de quelques-uns à milliers en migration)",lifespan:"12-20 ans (sauvage)"
+    social:"En hardes (de quelques-uns à milliers en migration)",lifespan:"12-20 ans (sauvage)",
+    image:"img/bison-d-amerique.jpg"
   },
   {
     id:81,name:"Chameau",emoji:"🐪",habitat:"Désert",habitatEmoji:"🏜️",
@@ -690,7 +725,8 @@ const ANIMALS = [
     fact:"Sa bosse stocke de la graisse, pas de l'eau. Elle s'affaisse quand il jeûne.",
     color:"#D2B48C",weight:"300-700 kg",origin:"Asie centrale (Bactriane) + péninsule arabique (dromadaire)",
     diet:"Plantes épineuses, herbes sèches, sel — très peu d'eau",
-    social:"En groupe (caravanes de 10-30)",lifespan:"40-50 ans"
+    social:"En groupe (caravanes de 10-30)",lifespan:"40-50 ans",
+    image:"img/chameau.jpg"
   },
   {
     id:82,name:"Tapir",emoji:"🐾",habitat:"Forêt tropicale",habitatEmoji:"🌴",
@@ -698,7 +734,8 @@ const ANIMALS = [
     fact:"Le tapir est un fossile vivant : il n'a presque pas changé depuis 35 millions d'ans.",
     color:"#8B4513",weight:"150-320 kg",origin:"Amérique centrale + du Sud + Asie du SE (Malaisie)",
     diet:"Feuilles, fruits, herbes, plantes aquatiques",
-    social:"Solitaire (sauf mère + petit)",lifespan:"25-35 ans"
+    social:"Solitaire (sauf mère + petit)",lifespan:"25-35 ans",
+    image:"img/tapir.jpg"
   },
   {
     id:83,name:"Capybara",emoji:"🐾",habitat:"Amérique du Sud",habitatEmoji:"💧",
@@ -706,7 +743,8 @@ const ANIMALS = [
     fact:"Le capybara est tellement détendu que les oiseaux se posent sur lui pour manger ses parasites.",
     color:"#D2B48C",weight:"35-66 kg",origin:"Amérique du Sud (bords des fleuves et lacs)",
     diet:"Herbes aquatiques, écorces, fruits, céréales",
-    social:"En groupes de 10-20 (jusqu'à 100)",lifespan:"8-10 ans (sauvage)"
+    social:"En groupes de 10-20 (jusqu'à 100)",lifespan:"8-10 ans (sauvage)",
+    image:"img/capybara.jpg"
   },
   {
     id:84,name:"Suricate",emoji:"🐾",habitat:"Désert du Kalahari",habitatEmoji:"🏜️",
@@ -714,7 +752,8 @@ const ANIMALS = [
     fact:"Les suricates sont immunisés contre le venin du scorpion et du cobra.",
     color:"#D2B48C",weight:"620-970 g",origin:"Afrique du Sud, Botswana, Namibie, Zimbabwe",
     diet:"Insectes, scorpions, serpents, lézards, racines",
-    social:"En meute (20-30 individus, chef dominant)",lifespan:"12-14 ans"
+    social:"En meute (20-30 individus, chef dominant)",lifespan:"12-14 ans",
+    image:"img/suricate.jpg"
   },
   {
     id:85,name:"Araignée sauteuse",emoji:"🕷️",habitat:"Partout",habitatEmoji:"🌍",
@@ -722,7 +761,8 @@ const ANIMALS = [
     fact:"L'araignée sauteuse est curieuse et n'a pas peur des humains — elle vous regarde dans les yeux !",
     color:"#4A4A4A",weight:"1-300 mg",origin:"Partout dans le monde (sauf pôles)",
     diet:"Insectes, araignées, petits lézards, nectar",
-    social:"Solitaire",lifespan:"1-3 ans"
+    social:"Solitaire",lifespan:"1-3 ans",
+    image:"img/araignee-sauteuse.jpg"
   },
   {
     id:86,name:"Requin fantôme",emoji:"🦈",habitat:"Océan profond",habitatEmoji:"🌑",
@@ -730,7 +770,8 @@ const ANIMALS = [
     fact:"Le requin fantôme est plus proche des raies que des vrais requins.",
     color:"#E8E8E8",weight:"1-2,6 kg",origin:"Profondeurs océaniques mondiales",
     diet:"Poissons, céphalopodes, crustacés",
-    social:"Solitaire",lifespan:"20-30 ans"
+    social:"Solitaire",lifespan:"20-30 ans",
+    image:"img/requin-fantome.jpg"
   },
   {
     id:87,name:"Anguille électrique",emoji:"🐍",habitat:"Amazonie",habitatEmoji:"💧",
@@ -738,7 +779,8 @@ const ANIMALS = [
     fact:"L'anguille électrique respire à la surface : elle mourrait si elle ne venait pas chercher de l'air.",
     color:"#808080",weight:"10-20 kg",origin:"Amazonie et Orénoque (Amérique du Sud)",
     diet:"Poissons, grenouilles, petits mammifères",
-    social:"Solitaire",lifespan:"10-22 ans"
+    social:"Solitaire",lifespan:"10-22 ans",
+    image:"img/anguille-electrique.jpg"
   },
   {
     id:88,name:"Poisson-archer",emoji:"🐟",habitat:"Mangroves d'Asie",habitatEmoji:"🌴",
@@ -746,7 +788,8 @@ const ANIMALS = [
     fact:"Il compense la réfraction de l'eau pour viser avec une précision parfaite.",
     color:"#32CD32",weight:"150-300 g",origin:"Mangroves d'Asie du SE, Australie du Nord, Pacifique",
     diet:"Insectes et araignées en surface (tir à l'eau)",
-    social:"Petits groupes (2-10)",lifespan:"5-10 ans"
+    social:"Petits groupes (2-10)",lifespan:"5-10 ans",
+    image:"img/poisson-archer.jpg"
   },
   {
     id:89,name:"Saumon",emoji:"🐟",habitat:"Océan & Rivières",habitatEmoji:"💧",
@@ -754,7 +797,8 @@ const ANIMALS = [
     fact:"Le saumon naît en eau douce, vit en mer et revient mourir dans la rivière où il est né.",
     color:"#FA8072",weight:"2-46 kg",origin:"Atlantique Nord + Pacifique Nord",
     diet:"Crevettes, insectes, petits poissons (en mer)",
-    social:"Solitaire (migration collective)",lifespan:"3-7 ans"
+    social:"Solitaire (migration collective)",lifespan:"3-7 ans",
+    image:"img/saumon.jpg"
   },
   {
     id:90,name:"Albatros hurleur",emoji:"🐦",habitat:"Océan austral",habitatEmoji:"🌊",
@@ -762,7 +806,8 @@ const ANIMALS = [
     fact:"L'albatros dort en vol grâce à un système qui lui permet de couper la moitié de son cerveau.",
     color:"#FFFFFF",weight:"6-12 kg",origin:"Océan austral, îles sub-antarctiques",
     diet:"Calmars, poissons, crustacés, charognes marines",
-    social:"Solitaire (couple fidèle à vie)",lifespan:"40-60 ans"
+    social:"Solitaire (couple fidèle à vie)",lifespan:"40-60 ans",
+    image:"img/albatros-hurleur.jpg"
   },
   {
     id:91,name:"Dodo",emoji:"🦤",habitat:"Maurice (disparu)",habitatEmoji:"🏝️",
@@ -770,7 +815,8 @@ const ANIMALS = [
     fact:"Le dodo s'est éteint en moins de 100 ans après l'arrivée des humains à Maurice.",
     color:"#8B7355",weight:"10-21 kg",origin:"Île Maurice (océan Indien) — disparu vers 1693",
     diet:"Fruits, noix, graines, bulbes",
-    social:"En petits groupes",lifespan:"Inconnue"
+    social:"En petits groupes",lifespan:"Inconnue",
+    image:"img/dodo.jpg"
   },
   {
     id:92,name:"Chimpanzé",emoji:"🐒",habitat:"Forêts d'Afrique centrale",habitatEmoji:"🌿",
@@ -778,7 +824,8 @@ const ANIMALS = [
     fact:"Le chimpanzé partage 98,7% de son ADN avec l'humain. Il se reconnaît dans un miroir.",
     color:"#4A4A4A",weight:"26-70 kg",origin:"Afrique centrale et occidentale",
     diet:"Fruits (60%), feuilles, insectes, viande (chasse collective)",
-    social:"En communauté (15-150)",lifespan:"40-60 ans"
+    social:"En communauté (15-150)",lifespan:"40-60 ans",
+    image:"img/chimpanze.jpg"
   },
   {
     id:93,name:"Guépard",emoji:"🐆",habitat:"Savane africaine",habitatEmoji:"🌾",
@@ -786,7 +833,8 @@ const ANIMALS = [
     fact:"Le guépard ronronne comme un chat. Il ne peut pas rugir — c'est le seul grand félin dans ce cas.",
     color:"#DAA520",weight:"21-72 kg",origin:"Afrique subsaharienne + Iran (population relique)",
     diet:"Gazelles, impalas, lièvres, oiseaux au sol",
-    social:"Solitaire (coalitions de frères possible)",lifespan:"8-12 ans (sauvage)"
+    social:"Solitaire (coalitions de frères possible)",lifespan:"8-12 ans (sauvage)",
+    image:"img/guepard.jpg"
   },
   {
     id:94,name:"Lamantin",emoji:"🐄",habitat:"Eaux côtières tropicales",habitatEmoji:"💧",
@@ -794,7 +842,8 @@ const ANIMALS = [
     fact:"Le lamantin est le cousin de l'éléphant. Sa nageoire contient des 'doigts' visibles aux rayons X.",
     color:"#A0A0A0",weight:"400-590 kg",origin:"Caraïbes, côtes atlantiques d'Amérique et d'Afrique",
     diet:"Plantes aquatiques et algues (60 kg/jour)",
-    social:"Solitaire ou petits groupes informels",lifespan:"40-60 ans"
+    social:"Solitaire ou petits groupes informels",lifespan:"40-60 ans",
+    image:"img/lamantin.jpg"
   },
   {
     id:95,name:"Éléphant de mer",emoji:"🦭",habitat:"Côtes antarctiques & Pacifique",habitatEmoji:"🧊",
@@ -802,7 +851,8 @@ const ANIMALS = [
     fact:"Le mâle peut peser 2,5 tonnes — le plus grand carnivore semi-aquatique du monde.",
     color:"#A0A0A0",weight:"400-2 500 kg",origin:"Antarctique + côtes du Pacifique (Californie, Patagonie)",
     diet:"Calmars, poissons, petits requins, raies",
-    social:"Solitaire en mer — colonie dense pour se reproduire",lifespan:"20-25 ans"
+    social:"Solitaire en mer — colonie dense pour se reproduire",lifespan:"20-25 ans",
+    image:"img/elephant-de-mer.jpg"
   },
   {
     id:96,name:"Faucon pèlerin",emoji:"🦅",habitat:"Monde entier (villes & falaises)",habitatEmoji:"🏙️",
@@ -810,7 +860,8 @@ const ANIMALS = [
     fact:"Son œil possède deux fovéas — il peut regarder devant ET sur le côté simultanément.",
     color:"#696969",weight:"0,3-1,5 kg",origin:"Tous les continents sauf Antarctique (villes + falaises)",
     diet:"Oiseaux en vol (pigeons, étourneaux, grives)",
-    social:"Solitaire (couple stable)",lifespan:"15-20 ans"
+    social:"Solitaire (couple stable)",lifespan:"15-20 ans",
+    image:"img/faucon-pelerin.jpg"
   },
   {
     id:97,name:"Wombat",emoji:"🐾",habitat:"Australie",habitatEmoji:"🌿",
@@ -818,7 +869,8 @@ const ANIMALS = [
     fact:"Son crâne très épais bloque l'entrée du terrier — ses fesses cuirassées repoussent les prédateurs.",
     color:"#8B7355",weight:"17-35 kg",origin:"Australie du Sud-Est + Tasmanie",
     diet:"Herbes, racines, écorces, champignons",
-    social:"Solitaire (réseau de terriers)",lifespan:"5-30 ans"
+    social:"Solitaire (réseau de terriers)",lifespan:"5-30 ans",
+    image:"img/wombat.jpg"
   },
   {
     id:98,name:"Murène",emoji:"🐍",habitat:"Récifs coralliens",habitatEmoji:"🪸",
@@ -826,7 +878,8 @@ const ANIMALS = [
     fact:"La murène coopère parfois avec le mérou pour chasser — chacun bloque une sortie.",
     color:"#556B2F",weight:"1-30 kg",origin:"Récifs coralliens mondiaux (tropicaux et tempérés chauds)",
     diet:"Poissons, poulpes, crevettes, oursins",
-    social:"Solitaire (cavernicole)",lifespan:"10-30 ans"
+    social:"Solitaire (cavernicole)",lifespan:"10-30 ans",
+    image:"img/murene.jpg"
   },
   {
     id:99,name:"Loutre de mer",emoji:"🦦",habitat:"Côtes du Pacifique Nord",habitatEmoji:"🌊",
@@ -834,7 +887,8 @@ const ANIMALS = [
     fact:"Sa fourrure est la plus dense du règne animal : 1 million de poils/cm². Aucune graisse de protection.",
     color:"#8B4513",weight:"14-45 kg",origin:"Côtes du Pacifique Nord (Alaska, Californie, Japon)",
     diet:"Oursins, palourdes, moules, crabes, calmars",
-    social:"En radeaux (groupes de 10 à 1 000 !)",lifespan:"15-23 ans"
+    social:"En radeaux (groupes de 10 à 1 000 !)",lifespan:"15-23 ans",
+    image:"img/loutre-de-mer.jpg"
   },
   {
     id:100,name:"Poisson-lune",emoji:"🐡",habitat:"Océan tropical & tempéré",habitatEmoji:"🌊",
@@ -842,7 +896,8 @@ const ANIMALS = [
     fact:"Il se réchauffe en surface après avoir plongé dans les eaux froides. Des oiseaux le nettoient de ses parasites.",
     color:"#C0C0C0",weight:"247-2 300 kg",origin:"Océans tropicaux et tempérés mondiaux",
     diet:"Méduses, zooplancton, mollusques, petits poissons",
-    social:"Solitaire",lifespan:"8-10 ans"
+    social:"Solitaire",lifespan:"8-10 ans",
+    image:"img/poisson-lune.jpg"
   },
   {
     id:101,name:"Siphonophore",emoji:"🪼",habitat:"Océan profond",habitatEmoji:"🌑",
@@ -850,7 +905,8 @@ const ANIMALS = [
     fact:"Chaque 'individu' d'un siphonophore est spécialisé : certains nagent, d'autres digèrent ou se reproduisent.",
     color:"#7DF9FF",weight:"Quelques g à 100+ kg (colonie entière)",origin:"Tous les océans du monde",
     diet:"Zooplancton, petits poissons, larves",
-    social:"Colonie d'individus spécialisés (pas de social classique)",lifespan:"Inconnue (colonie potentiellement immortelle)"
+    social:"Colonie d'individus spécialisés (pas de social classique)",lifespan:"Inconnue (colonie potentiellement immortelle)",
+    image:"img/siphonophore.jpg"
   },
   {
     id:102,name:"Rat-taupe nu",emoji:"🐭",habitat:"Afrique de l'Est (terriers)",habitatEmoji:"🌍",
@@ -858,7 +914,8 @@ const ANIMALS = [
     fact:"Comme les reptiles, il ne régule pas sa température corporelle — un mammifère vraiment unique.",
     color:"#FFC8A0",weight:"30-80 g",origin:"Kenya, Éthiopie, Somalie (terriers souterrains)",
     diet:"Tubercules, racines, bulbes souterrains",
-    social:"En colonie eusociale (20-300, avec une reine)",lifespan:"28-32 ans (record absolu pour un rongeur)"
+    social:"En colonie eusociale (20-300, avec une reine)",lifespan:"28-32 ans (record absolu pour un rongeur)",
+    image:"img/rat-taupe-nu.jpg"
   },
   {
     id:103,name:"Crevette-mante",emoji:"🦐",habitat:"Océan tropical",habitatEmoji:"🌊",
@@ -866,7 +923,8 @@ const ANIMALS = [
     fact:"Ses coups peuvent briser le verre d'un aquarium. Surnommée 'crevette tueuse'.",
     color:"#FF6B35",weight:"90-600 g",origin:"Océan Indo-Pacifique (récifs coralliens)",
     diet:"Crabes, crevettes, coquillages, oursins, petits poissons",
-    social:"Solitaire (extrêmement territorial)",lifespan:"3-20 ans"
+    social:"Solitaire (extrêmement territorial)",lifespan:"3-20 ans",
+    image:"img/crevette-mante.jpg"
   },
   {
     id:104,name:"Fourmi zombie",emoji:"🐜",habitat:"Forêt tropicale",habitatEmoji:"🌴",
@@ -874,7 +932,8 @@ const ANIMALS = [
     fact:"Le champignon dirige la fourmi jusqu'à la feuille parfaite, lui fait mordre la nervure, puis sort de sa tête.",
     color:"#8B6914",weight:"1-2 mg",origin:"Forêts tropicales d'Amérique du Sud, Asie, Afrique",
     diet:"Feuilles et sève (contrôlée par le champignon parasite)",
-    social:"Individuellement parasitée — exclue de la colonie",lifespan:"Quelques jours après l'infection"
+    social:"Individuellement parasitée — exclue de la colonie",lifespan:"Quelques jours après l'infection",
+    image:"img/fourmi-zombie.jpg"
   },
   {
     id:105,name:"Blob",emoji:"🟡",habitat:"Forêts humides",habitatEmoji:"🌲",
@@ -882,7 +941,8 @@ const ANIMALS = [
     fact:"Le blob n'est ni animal, ni végétal, ni champignon. C'est une énigme de la biologie.",
     color:"#FFD700",weight:"Quelques g (peut grossir à plusieurs kg)",origin:"Forêts humides du monde entier",
     diet:"Bactéries, champignons, levures, matière organique",
-    social:"Solitaire (peut fusionner avec d'autres blobs)",lifespan:"Potentiellement illimitée (forme dormante)"
+    social:"Solitaire (peut fusionner avec d'autres blobs)",lifespan:"Potentiellement illimitée (forme dormante)",
+    image:"img/blob.jpg"
   },
   {
     id:106,name:"Taupe dorée",emoji:"✨",habitat:"Désert du Namib",habitatEmoji:"🏜️",
@@ -890,7 +950,8 @@ const ANIMALS = [
     fact:"Son pelage irisé or-vert est créé par des nanostructures dans les poils — un bijou naturel.",
     color:"#FFD700",weight:"15-540 g",origin:"Afrique du Sud et Namibie",
     diet:"Vers de terre, insectes, termites, lézards",
-    social:"Solitaire",lifespan:"5-10 ans"
+    social:"Solitaire",lifespan:"5-10 ans",
+    image:"img/taupe-doree.jpg"
   },
   {
     id:107,name:"Ver de Pompéi",emoji:"🪱",habitat:"Sources hydrothermales (fond marin)",habitatEmoji:"🌋",
@@ -898,7 +959,8 @@ const ANIMALS = [
     fact:"Il porte sur son dos une colonie de bactéries qui l'isolent thermiquement comme une veste.",
     color:"#FF4500",weight:"Quelques grammes",origin:"Dorsales médio-océaniques (fonds marins mondiaux)",
     diet:"Bactéries chémosynthétiques (vivant sur son propre dos)",
-    social:"En colonies dans des tubes",lifespan:"Inconnue"
+    social:"En colonies dans des tubes",lifespan:"Inconnue",
+    image:"img/ver-de-pompei.jpg"
   },
   {
     id:108,name:"Pieuvre dumbo",emoji:"🐙",habitat:"Océan profond (3 000-4 000 m)",habitatEmoji:"🌑",
@@ -906,7 +968,8 @@ const ANIMALS = [
     fact:"C'est la pieuvre qui vit le plus profond. Elle avale ses proies entières — trop froid pour mâcher.",
     color:"#9B59B6",weight:"5-6 kg",origin:"Grands fonds de tous les océans",
     diet:"Vers, bivalves, crustacés, copépodes",
-    social:"Solitaire",lifespan:"3-5 ans"
+    social:"Solitaire",lifespan:"3-5 ans",
+    image:"img/pieuvre-dumbo.jpg"
   },
   {
     id:109,name:"Escargot de mer bleu",emoji:"🐌",habitat:"Océan tropical (surface)",habitatEmoji:"🌊",
@@ -914,7 +977,8 @@ const ANIMALS = [
     fact:"Surnommé 'dragon bleu', il mesure 3 cm mais peut paralyser un adulte avec son venin volé.",
     color:"#1E90FF",weight:"Moins d'1 g",origin:"Eaux tropicales et subtropicales (surface de l'Atlantique, Pacifique, Indien)",
     diet:"Méduses, siphonophores, vélelles",
-    social:"Solitaire ou en petits groupes passifs",lifespan:"Quelques mois"
+    social:"Solitaire ou en petits groupes passifs",lifespan:"Quelques mois",
+    image:"img/escargot-de-mer-bleu.jpg"
   },
   {
     id:110,name:"Fourmi Matabele",emoji:"🐜",habitat:"Savane africaine",habitatEmoji:"🌾",
@@ -922,7 +986,8 @@ const ANIMALS = [
     fact:"Ces fourmis attaquent les termitières en armée. Les blessées sont ramenées et léchées pour désinfection.",
     color:"#8B0000",weight:"10-20 mg",origin:"Savane africaine subsaharienne",
     diet:"Termites Macrotermes (régime quasi-exclusif)",
-    social:"En colonie militaire structurée + infirmières",lifespan:"Reine plusieurs années — Ouvrière quelques mois"
+    social:"En colonie militaire structurée + infirmières",lifespan:"Reine plusieurs années — Ouvrière quelques mois",
+    image:"img/fourmi-matabele.jpg"
   },
   {
     id:111,name:"Araignée paon",emoji:"🕷️",habitat:"Australie",habitatEmoji:"🌿",
@@ -930,7 +995,8 @@ const ANIMALS = [
     fact:"Ces araignées sauteuses tiennent plusieurs sur un ongle — leurs danses sont inoubliables.",
     color:"#FF6347",weight:"~15 mg",origin:"Australie du Sud et du Sud-Est",
     diet:"Insectes, petites araignées, collemboles",
-    social:"Solitaire",lifespan:"1 an"
+    social:"Solitaire",lifespan:"1 an",
+    image:"img/araignee-paon.jpg"
   },
   {
     id:112,name:"Insecte bombardier",emoji:"🐛",habitat:"Prairies & Forêts",habitatEmoji:"🌿",
@@ -938,7 +1004,8 @@ const ANIMALS = [
     fact:"La réaction crée une vraie détonation audible — de petits coups de canon biologiques.",
     color:"#8B4513",weight:"5-100 mg",origin:"Tous les continents sauf Antarctique",
     diet:"Limaces, vers, petits insectes, larves",
-    social:"Solitaire",lifespan:"Larve 1-2 ans — Adulte quelques mois"
+    social:"Solitaire",lifespan:"Larve 1-2 ans — Adulte quelques mois",
+    image:"img/insecte-bombardier.jpg"
   },
   {
     id:113,name:"Grenouille de verre",emoji:"🐸",habitat:"Forêt tropicale d'Amérique du Sud",habitatEmoji:"🌳",
@@ -946,7 +1013,8 @@ const ANIMALS = [
     fact:"Le mâle surveille les œufs camouflé dessus grâce à sa peau translucide.",
     color:"#90EE90",weight:"2-14 g",origin:"Forêts tropicales d'Amérique centrale + du Sud",
     diet:"Insectes, araignées, petits escargots",
-    social:"Solitaire (mâles gardent le nid)",lifespan:"10-14 ans"
+    social:"Solitaire (mâles gardent le nid)",lifespan:"10-14 ans",
+    image:"img/grenouille-de-verre.jpg"
   },
   {
     id:114,name:"Moloch d'Australie",emoji:"🦎",habitat:"Désert australien",habitatEmoji:"🏜️",
@@ -954,7 +1022,8 @@ const ANIMALS = [
     fact:"Son faux 'crâne' dans le cou est présenté aux prédateurs pour simuler une deuxième tête.",
     color:"#D2691E",weight:"50-100 g",origin:"Désert australien (Outback)",
     diet:"Fourmis noires uniquement (jusqu'à 2 500 par repas !)",
-    social:"Solitaire",lifespan:"20 ans"
+    social:"Solitaire",lifespan:"20 ans",
+    image:"img/moloch-d-australie.jpg"
   },
   {
     id:115,name:"Lézard basilic",emoji:"🦎",habitat:"Forêt tropicale d'Amérique centrale",habitatEmoji:"🌴",
@@ -962,7 +1031,8 @@ const ANIMALS = [
     fact:"Les jeunes peuvent parcourir 400 m sur l'eau avant de couler.",
     color:"#228B22",weight:"200-700 g",origin:"Forêts tropicales d'Amérique centrale + nord de l'Amérique du Sud",
     diet:"Insectes, fleurs, fruits, petits vertébrés",
-    social:"Solitaire ou petits groupes",lifespan:"7 ans (sauvage)"
+    social:"Solitaire ou petits groupes",lifespan:"7 ans (sauvage)",
+    image:"img/lezard-basilic.jpg"
   },
   {
     id:116,name:"Drongo brillant",emoji:"🐦",habitat:"Savane africaine",habitatEmoji:"🌾",
@@ -970,7 +1040,8 @@ const ANIMALS = [
     fact:"Même les suricates et les mangoustes se font duper. C'est le grand arnaqueur de la savane.",
     color:"#000000",weight:"50 g",origin:"Afrique subsaharienne (savane + broussailles)",
     diet:"Insectes (+ nourriture volée par duperie aux autres animaux)",
-    social:"Solitaire (territorial)",lifespan:"5-6 ans"
+    social:"Solitaire (territorial)",lifespan:"5-6 ans",
+    image:"img/drongo-brillant.jpg"
   },
   {
     id:117,name:"Oiseau jardinier",emoji:"🐦",habitat:"Australie & Nouvelle-Guinée",habitatEmoji:"🌿",
@@ -978,7 +1049,8 @@ const ANIMALS = [
     fact:"Certains mâles volent des décorations chez leurs voisins et créent une perspective optique dans leur boudoir !",
     color:"#4169E1",weight:"70-230 g",origin:"Australie + Nouvelle-Guinée",
     diet:"Fruits, insectes, nectar, fleurs",
-    social:"Solitaire (mâle construit seul sa boudoir)",lifespan:"20-30 ans"
+    social:"Solitaire (mâle construit seul sa boudoir)",lifespan:"20-30 ans",
+    image:"img/oiseau-jardinier.jpg"
   },
   {
     id:118,name:"Hoazin",emoji:"🦅",habitat:"Amazonie",habitatEmoji:"🌳",
@@ -986,7 +1058,8 @@ const ANIMALS = [
     fact:"Il digère les feuilles par fermentation comme une vache, et sent le fumier — surnommé 'oiseau puant'.",
     color:"#8B4513",weight:"700-900 g",origin:"Amazonie, Orénoque, Guyanes",
     diet:"Feuilles, fleurs, fruits (tout fermenté dans le jabot)",
-    social:"En groupes familiaux (6-15)",lifespan:"25-30 ans"
+    social:"En groupes familiaux (6-15)",lifespan:"25-30 ans",
+    image:"img/hoazin.jpg"
   },
   {
     id:119,name:"Mante orchidée",emoji:"🌸",habitat:"Forêt tropicale d'Asie du Sud-Est",habitatEmoji:"🌴",
@@ -994,7 +1067,8 @@ const ANIMALS = [
     fact:"Elle est plus efficace qu'une vraie fleur pour attirer les abeilles. Elles la préfèrent à la vraie plante !",
     color:"#FFB6C1",weight:"150-700 mg",origin:"Malaisie, Indonésie, Thaïlande, Sumatra",
     diet:"Abeilles, papillons, mouches, guêpes (attirés par mimétisme)",
-    social:"Solitaire (cannibale sexuel comme la mante religieuse)",lifespan:"Femelle 1 an — Mâle quelques mois"
+    social:"Solitaire (cannibale sexuel comme la mante religieuse)",lifespan:"Femelle 1 an — Mâle quelques mois",
+    image:"img/mante-orchidee.jpg"
   },
   {
     id:120,name:"Poisson-pierre",emoji:"🐟",habitat:"Océan Indo-Pacifique",habitatEmoji:"🌊",
@@ -1002,7 +1076,8 @@ const ANIMALS = [
     fact:"Son venin cause des douleurs si intenses que les victimes demandent parfois à amputer le membre.",
     color:"#696969",weight:"150-400 g",origin:"Récifs coralliens Indo-Pacifique, côtes d'Australie",
     diet:"Petits poissons, crevettes, crabes",
-    social:"Solitaire (sédentaire)",lifespan:"5-10 ans"
+    social:"Solitaire (sédentaire)",lifespan:"5-10 ans",
+    image:"img/poisson-pierre.jpg"
   },
   {
     id:121,name:"Dauphin rose de l'Amazone",emoji:"🐬",habitat:"Amazonie (eau douce)",habitatEmoji:"🌳",
@@ -1010,7 +1085,8 @@ const ANIMALS = [
     fact:"Rose comme un flamant ! Il peut tourner la tête à 180° pour naviguer dans la forêt.",
     color:"#FFB6C1",weight:"85-185 kg",origin:"Amazonie et Orénoque (Venezuela, Brésil, Pérou, Bolivie...)",
     diet:"Poissons, tortues, crabes, crevettes (200+ espèces !)",
-    social:"Solitaire ou petits groupes (2-4)",lifespan:"30+ ans"
+    social:"Solitaire ou petits groupes (2-4)",lifespan:"30+ ans",
+    image:"img/dauphin-rose-de-l-amazone.jpg"
   },
   {
     id:122,name:"Cigale périodique",emoji:"🦗",habitat:"Amérique du Nord",habitatEmoji:"🌲",
@@ -1018,7 +1094,8 @@ const ANIMALS = [
     fact:"Des milliards de cigales surgissent ensemble, créent un chœur de 100 dB, et meurent en 6 semaines.",
     color:"#228B22",weight:"1-3 g",origin:"Est de l'Amérique du Nord (17 États américains)",
     diet:"Larve : sève des racines d'arbres — Adulte : ne mange presque pas",
-    social:"Par milliards lors de l'émergence synchronisée",lifespan:"13 ou 17 ans (dont 99% sous terre)"
+    social:"Par milliards lors de l'émergence synchronisée",lifespan:"13 ou 17 ans (dont 99% sous terre)",
+    image:"img/cigale-periodique.jpg"
   },
   {
     id:123,name:"Coléoptère du Namib",emoji:"🪲",habitat:"Désert du Namib",habitatEmoji:"🏜️",
@@ -1026,7 +1103,8 @@ const ANIMALS = [
     fact:"Son dos en relief crée des gouttelettes qui roulent vers sa bouche — 40% de son poids en eau chaque matin.",
     color:"#2F4F4F",weight:"0,03-0,05 g",origin:"Désert du Namib (Namibie + Angola)",
     diet:"Matière végétale décomposée, champignons",
-    social:"Solitaire",lifespan:"Inconnue"
+    social:"Solitaire",lifespan:"Inconnue",
+    image:"img/coleoptere-du-namib.jpg"
   },
   {
     id:124,name:"Crapaud surinamais",emoji:"🐸",habitat:"Amazonie",habitatEmoji:"🌳",
@@ -1034,7 +1112,8 @@ const ANIMALS = [
     fact:"La gestation dure 80 jours. Les petits crapauds percent la peau de leur mère — spectacle troublant.",
     color:"#8B7355",weight:"100-170 g",origin:"Amérique du Sud tropicale + Trinidad",
     diet:"Vers, insectes, petits poissons, crustacés",
-    social:"Solitaire (couple en saison des pluies)",lifespan:"4-8 ans"
+    social:"Solitaire (couple en saison des pluies)",lifespan:"4-8 ans",
+    image:"img/crapaud-surinamais.jpg"
   },
   {
     id:125,name:"Pieuvre des cocotiers",emoji:"🐙",habitat:"Océan Indo-Pacifique",habitatEmoji:"🌊",
@@ -1042,7 +1121,8 @@ const ANIMALS = [
     fact:"Elle marche sur 2 tentacules tout en portant sa 'maison' avec les 6 autres.",
     color:"#8B4513",weight:"400 g-1 kg",origin:"Indo-Pacifique — Australie, Indonésie, Philippines",
     diet:"Crabes, crevettes, palourdes, poissons",
-    social:"Solitaire",lifespan:"1-2 ans"
+    social:"Solitaire",lifespan:"1-2 ans",
+    image:"img/pieuvre-des-cocotiers.jpg"
   },
   {
     id:126,name:"Holothurie",emoji:"🥒",habitat:"Fond des océans",habitatEmoji:"🌑",
@@ -1050,7 +1130,8 @@ const ANIMALS = [
     fact:"Elle respire en aspirant de l'eau par son arrière-train. Et nettoie les fonds en filtrant les sédiments.",
     color:"#8B6914",weight:"50 g-5 kg",origin:"Tous les océans du monde (fond marin)",
     diet:"Sédiments, détritus, matière organique décomposée",
-    social:"Solitaire ou en agrégats denses sur le fond",lifespan:"5-10 ans"
+    social:"Solitaire ou en agrégats denses sur le fond",lifespan:"5-10 ans",
+    image:"img/holothurie.jpg"
   },
   {
     id:127,name:"Nautile",emoji:"🐚",habitat:"Océan Indo-Pacifique (profond)",habitatEmoji:"🌑",
@@ -1058,7 +1139,8 @@ const ANIMALS = [
     fact:"Il a jusqu'à 90 tentacules sans ventouses. Sa coquille est un chef-d'œuvre mathématique naturel.",
     color:"#FF8C00",weight:"100-200 g",origin:"Océan Indo-Pacifique — Australie, Philippines, Fidji (100-500 m de profondeur)",
     diet:"Charognes, crabes, poissons morts, crevettes",
-    social:"Solitaire (remonte la nuit, descend le jour)",lifespan:"15-20 ans"
+    social:"Solitaire (remonte la nuit, descend le jour)",lifespan:"15-20 ans",
+    image:"img/nautile.jpg"
   },
   {
     id:128,name:"Phasme feuille",emoji:"🍃",habitat:"Forêt tropicale d'Asie",habitatEmoji:"🌴",
@@ -1066,7 +1148,8 @@ const ANIMALS = [
     fact:"Les femelles se reproduisent sans mâle (parthénogenèse). Leurs œufs ressemblent à des graines.",
     color:"#228B22",weight:"30-100 g",origin:"Malaisie, Indonésie, Philippines, Inde",
     diet:"Feuilles de goyavier, ronces, chênes tropicaux",
-    social:"Solitaire (femelles reproduisent seules)",lifespan:"Femelle 1 an — Mâle 4 mois"
+    social:"Solitaire (femelles reproduisent seules)",lifespan:"Femelle 1 an — Mâle 4 mois",
+    image:"img/phasme-feuille.jpg"
   },
   {
     id:129,name:"Oiseau-lyre",emoji:"🐦",habitat:"Forêts d'Australie",habitatEmoji:"🌿",
@@ -1074,7 +1157,8 @@ const ANIMALS = [
     fact:"Sa queue en forme de lyre grecque peut mesurer 60 cm. Il apprend de nouveaux sons toute sa vie.",
     color:"#8B4513",weight:"800 g-1,1 kg",origin:"Forêts humides du sud-est de l'Australie",
     diet:"Vers, insectes, araignées, escargots",
-    social:"Solitaire (mâle polygyne)",lifespan:"20-25 ans"
+    social:"Solitaire (mâle polygyne)",lifespan:"20-25 ans",
+    image:"img/oiseau-lyre.jpg"
   },
   {
     id:130,name:"Indicateur à gorge noire",emoji:"🐦",habitat:"Afrique subsaharienne",habitatEmoji:"🌿",
@@ -1082,7 +1166,8 @@ const ANIMALS = [
     fact:"Humains et Honeyguides coopèrent depuis des millénaires. L'oiseau mange la cire pendant que l'homme prend le miel.",
     color:"#8B7355",weight:"35-50 g",origin:"Afrique subsaharienne",
     diet:"Cire d'abeille, larves d'abeilles, insectes",
-    social:"Solitaire (parasite de nid)",lifespan:"10-12 ans"
+    social:"Solitaire (parasite de nid)",lifespan:"10-12 ans",
+    image:"img/indicateur-a-gorge-noire.jpg"
   },
   {
     id:131,name:"Fourmi tisserande",emoji:"🐜",habitat:"Forêt tropicale d'Asie & Afrique",habitatEmoji:"🌴",
@@ -1090,7 +1175,8 @@ const ANIMALS = [
     fact:"Les ouvrières forment des chaînes vivantes pour rapprocher deux feuilles pendant que d'autres cousent.",
     color:"#FF6347",weight:"1-2 mg",origin:"Afrique subsaharienne + Asie du SE (forêt tropicale)",
     diet:"Insectes, petits arthropodes, nectar, charognes",
-    social:"En colonie (100 000-500 000, plusieurs arbres)",lifespan:"Reine 2-3 ans — Ouvrière quelques semaines"
+    social:"En colonie (100 000-500 000, plusieurs arbres)",lifespan:"Reine 2-3 ans — Ouvrière quelques semaines",
+    image:"img/fourmi-tisserande.jpg"
   },
   {
     id:132,name:"Kéa",emoji:"🦜",habitat:"Alpes néo-zélandaises",habitatEmoji:"⛰️",
@@ -1098,7 +1184,8 @@ const ANIMALS = [
     fact:"Le kéa est le seul perroquet alpin du monde. Il arrache les essuie-glaces des voitures par curiosité.",
     color:"#228B22",weight:"750 g-1 kg",origin:"Alpes du Sud, Nouvelle-Zélande (île du Sud)",
     diet:"Racines, baies, insectes, charognes, graisse de mouton",
-    social:"En petits groupes curieux (5-20)",lifespan:"20 ans"
+    social:"En petits groupes curieux (5-20)",lifespan:"20 ans",
+    image:"img/kea.jpg"
   },
   {
     id:133,name:"Musaraigne",emoji:"🐭",habitat:"Forêts & Prairies",habitatEmoji:"🌿",
@@ -1106,7 +1193,8 @@ const ANIMALS = [
     fact:"Certaines musaraignes ont un venin paralysant — elles stockent des proies vivantes dans leur terrier.",
     color:"#808080",weight:"2-30 g",origin:"Monde entier sauf Australie et pôles",
     diet:"Insectes, vers, grenouilles, petits rongeurs",
-    social:"Solitaire (très agressive envers ses congénères)",lifespan:"12-18 mois"
+    social:"Solitaire (très agressive envers ses congénères)",lifespan:"12-18 mois",
+    image:"img/musaraigne.jpg"
   },
   {
     id:134,name:"Zorille",emoji:"🦡",habitat:"Savane africaine",habitatEmoji:"🌾",
@@ -1114,7 +1202,8 @@ const ANIMALS = [
     fact:"La zorille est considérée comme l'animal le plus malodorant d'Afrique.",
     color:"#000000",weight:"680-1 460 g",origin:"Afrique subsaharienne (savane + broussailles)",
     diet:"Serpents, rongeurs, grenouilles, insectes, œufs",
-    social:"Solitaire (nocturne)",lifespan:"5-13 ans"
+    social:"Solitaire (nocturne)",lifespan:"5-13 ans",
+    image:"img/zorille.jpg"
   },
   {
     id:135,name:"Tatou à neuf bandes",emoji:"🦔",habitat:"Amérique du Nord & du Sud",habitatEmoji:"🌾",
@@ -1122,7 +1211,8 @@ const ANIMALS = [
     fact:"La femelle donne toujours naissance à 4 vrais jumeaux identiques — unique chez les mammifères.",
     color:"#A0A0A0",weight:"2,5-7 kg",origin:"Amérique centrale + du Sud (introduit aux États-Unis)",
     diet:"Insectes, vers, petits vertébrés, champignons, charognes",
-    social:"Solitaire (nocturne)",lifespan:"7-20 ans"
+    social:"Solitaire (nocturne)",lifespan:"7-20 ans",
+    image:"img/tatou-a-neuf-bandes.jpg"
   },
   {
     id:136,name:"Salamandre géante de Chine",emoji:"🦎",habitat:"Rivières de Chine",habitatEmoji:"💧",
@@ -1130,7 +1220,8 @@ const ANIMALS = [
     fact:"Elle 'voit' dans le noir grâce à des récepteurs sensibles aux vibrations tout le long de son corps.",
     color:"#8B7355",weight:"25-50 kg",origin:"Rivières de montagne de Chine centrale et méridionale",
     diet:"Poissons, grenouilles, crabes, insectes, vers",
-    social:"Solitaire",lifespan:"60-80 ans !"
+    social:"Solitaire",lifespan:"60-80 ans !",
+    image:"img/salamandre-geante-de-chine.jpg"
   },
   {
     id:137,name:"Lucane cerf-volant",emoji:"🪲",habitat:"Forêts de chênes d'Europe",habitatEmoji:"🌲",
@@ -1138,7 +1229,8 @@ const ANIMALS = [
     fact:"La larve vit 5 ans dans le bois pourri. L'adulte ne mange pas et vit seulement quelques semaines.",
     color:"#8B4513",weight:"2-10 g",origin:"Forêts de chênes d'Europe et d'Asie",
     diet:"Larve : bois mort en décomposition — Adulte : sève sucrée, liquides fermentés",
-    social:"Solitaire (compétitif entre mâles)",lifespan:"Larve 3-6 ans — Adulte 3-4 semaines"
+    social:"Solitaire (compétitif entre mâles)",lifespan:"Larve 3-6 ans — Adulte 3-4 semaines",
+    image:"img/lucane-cerf-volant.jpg"
   },
   {
     id:138,name:"Puffin des Anglais",emoji:"🐦",habitat:"Océan Atlantique",habitatEmoji:"🌊",
@@ -1146,7 +1238,8 @@ const ANIMALS = [
     fact:"Libéré en plein Arizona, un puffin est retourné à son nid en Angleterre en seulement 13 jours.",
     color:"#2F4F4F",weight:"350-575 g",origin:"Atlantique Nord — Îles Britanniques, Atlantique en hiver",
     diet:"Harengs, sardines, anchois, céphalopodes",
-    social:"En grandes colonies marines",lifespan:"50-55 ans !"
+    social:"En grandes colonies marines",lifespan:"50-55 ans !",
+    image:"img/puffin-des-anglais.jpg"
   },
   {
     id:139,name:"Méduse lion",emoji:"🪼",habitat:"Océan Arctique & tempéré",habitatEmoji:"🧊",
@@ -1154,7 +1247,8 @@ const ANIMALS = [
     fact:"Ses tentacules urticants restent dangereux même après sa mort. Ni cerveau, ni cœur, ni yeux.",
     color:"#FF4500",weight:"150-600 g (tentacules exclus)",origin:"Arctique + Atlantique Nord + Pacifique Nord",
     diet:"Zooplancton, petits poissons, larves, autres méduses",
-    social:"Solitaire (dérive passive)",lifespan:"Quelques mois (meurt après reproduction)"
+    social:"Solitaire (dérive passive)",lifespan:"Quelques mois (meurt après reproduction)",
+    image:"img/meduse-lion.jpg"
   },
   {
     id:140,name:"Singe capucin",emoji:"🐒",habitat:"Forêt tropicale d'Amérique",habitatEmoji:"🌳",
@@ -1162,7 +1256,8 @@ const ANIMALS = [
     fact:"Les capucins transmettent leurs techniques d'outils de génération en génération — une vraie culture.",
     color:"#8B4513",weight:"1,4-4,8 kg",origin:"Amérique centrale et du Sud (forêt tropicale)",
     diet:"Fruits, insectes, noix, petits vertébrés, palmistes",
-    social:"En groupes (6-40 avec hiérarchie)",lifespan:"15-25 ans"
+    social:"En groupes (6-40 avec hiérarchie)",lifespan:"15-25 ans",
+    image:"img/singe-capucin.jpg"
   },
   {
     id:141,name:"Paresseux à trois doigts",emoji:"🦥",habitat:"Forêt tropicale d'Amérique du Sud",habitatEmoji:"🌳",
@@ -1170,7 +1265,8 @@ const ANIMALS = [
     fact:"Il descend de son arbre seulement une fois par semaine pour faire ses besoins. Son corps est orienté à l'envers.",
     color:"#8B7355",weight:"3,5-4,5 kg",origin:"Forêts tropicales d'Amérique centrale et du Sud",
     diet:"Feuilles, bourgeons, petits fruits",
-    social:"Solitaire (ne se déplace que la nuit)",lifespan:"20-40 ans"
+    social:"Solitaire (ne se déplace que la nuit)",lifespan:"20-40 ans",
+    image:"img/paresseux-a-trois-doigts.jpg"
   },
   {
     id:142,name:"Galago",emoji:"🐒",habitat:"Afrique subsaharienne",habitatEmoji:"🌿",
@@ -1178,7 +1274,8 @@ const ANIMALS = [
     fact:"Pour chasser, il urine sur ses mains pour laisser des traces odorantes à chaque saut.",
     color:"#8B7355",weight:"95-300 g",origin:"Afrique subsaharienne",
     diet:"Insectes, fruits, gomme d'arbre, petits vertébrés",
-    social:"Solitaire (nocturne, territoires chevauchants)",lifespan:"12-16 ans"
+    social:"Solitaire (nocturne, territoires chevauchants)",lifespan:"12-16 ans",
+    image:"img/galago.jpg"
   },
   {
     id:143,name:"Fossa",emoji:"🐈",habitat:"Madagascar",habitatEmoji:"🌴",
@@ -1186,7 +1283,8 @@ const ANIMALS = [
     fact:"La fossa ressemble à un croisement entre un puma et une mangouste — elle est unique au monde.",
     color:"#8B4513",weight:"5,5-8,6 kg",origin:"Madagascar (forêts humides + sèches)",
     diet:"Lémuriens, oiseaux, reptiles, petits mammifères",
-    social:"Solitaire",lifespan:"15-20 ans"
+    social:"Solitaire",lifespan:"15-20 ans",
+    image:"img/fossa.jpg"
   },
   {
     id:144,name:"Piranha",emoji:"🐟",habitat:"Amazonie",habitatEmoji:"💧",
@@ -1194,7 +1292,8 @@ const ANIMALS = [
     fact:"Le piranha est peureux en solo. C'est en banc qu'il devient redoutable — et il détecte une goutte de sang à 250 m.",
     color:"#DC143C",weight:"0,5-3,5 kg",origin:"Amazonie, Orénoque, São Francisco (Amérique du Sud)",
     diet:"Poissons, insectes, charognes, fruits, plantes (omnivore !)",
-    social:"En bancs (20 à 100+ individus)",lifespan:"10-25 ans"
+    social:"En bancs (20 à 100+ individus)",lifespan:"10-25 ans",
+    image:"img/piranha.jpg"
   },
   {
     id:145,name:"Ver luisant",emoji:"💚",habitat:"Prairies & Haies d'Europe",habitatEmoji:"🌿",
@@ -1202,7 +1301,8 @@ const ANIMALS = [
     fact:"Le ver luisant n'est pas un ver mais un coléoptère. Seule la femelle produit de la lumière.",
     color:"#7CFC00",weight:"15-25 mg",origin:"Europe et Asie (prairies, haies, lisières de forêt)",
     diet:"Larve : escargots et limaces — Adulte femelle : ne mange pas",
-    social:"Solitaire (se retrouvent par bioluminescence)",lifespan:"Larve 2-3 ans — Adulte 3-4 semaines"
+    social:"Solitaire (se retrouvent par bioluminescence)",lifespan:"Larve 2-3 ans — Adulte 3-4 semaines",
+    image:"img/ver-luisant.jpg"
   }
 ];
 
