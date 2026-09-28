@@ -105,3 +105,19 @@ Chaque image reste sous sa licence d'origine (CC BY, CC BY-SA, CC0, GFDL ou doma
 | 143 | Fossa | `img/fossa.jpg` | Ran Kirlian | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Cryptoprocta_Ferox.JPG) |
 | 144 | Piranha | `img/piranha.jpg` | H. Zell | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Pygocentrus_nattereri_-_Karlsruhe_Zoo_01.jpg) |
 | 145 | Ver luisant | `img/ver-luisant.jpg` | Hectonichus | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Lampyridae_-_Lampyris_noctiluca.JPG) |
+
+## Images d'origine remplacées (trop petites pour le bandeau)
+
+| # | Animal | Fichier | Auteur | Licence | Source |
+|---|---|---|---|---|---|
+| 4 | Pieuvre commune | `img/pieuvre.jpg` | albert kok | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Octopus2.jpg) |
+| 6 | Axolotl | `img/axolotl.jpg` | Axolotover | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Leucistic.png) |
+| 7 | Tardigrade | `img/Tardigrade.jpg` | Schokraie E, Warnken U, Hotz-Wagenblatt A, Grohme MA, Hengherr S, et al. (2012) | CC BY 2.5 | [Commons](https://commons.wikimedia.org/wiki/File:SEM_image_of_Milnesium_tardigradum_in_active_state_-_journal.pone.0045682.g001-2_(white_background).png) |
+| 10 | Colibri | `img/Colibri.jpg` | Charles J. Sharp | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Anna%27s_hummingbird_(Calypte_anna)_male_in_flight_Campbell_River.jpg) |
+| 11 | Toucan | `img/toucan.jpg` | Giles Laurent | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg) |
+| 16 | Tortue géante des Galápagos | `img/tortue-galapagos.jpg` | Mfield, Matthew Field, http://www.photography.mattfield.com | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Galapagos_giant_tortoise_Geochelone_elephantopus.jpg) |
+| 22 | Gecko tokay | `img/gecko-tokay.jpg` | MH Herpetology | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tokay_gecko_(Gekko_gecko).jpg) |
+| 24 | Gorille | `img/gorille.jpg` | Brocken Inaglory | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Male_gorilla_in_SF_zoo.jpg) |
+| 38 | Panda géant | `img/panda-geant.jpg` | J. Patrick Fischer | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Grosser_Panda.JPG) |
+| 39 | Koala | `img/koala.jpg` | Diliff | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg) |
+| 45 | Papillon Monarque | `img/papillon-monarque.jpg` | Photo by and (c)2007 Derek Ramsey (Ram-Man) | GFDL 1.2 | [Commons](https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg) |

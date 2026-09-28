@@ -90,31 +90,15 @@ function openModal(id) {
   const modal = document.getElementById('animal-modal');
   const header = document.getElementById('modal-header');
 
-  header.style.background = `linear-gradient(135deg, ${a.color}, ${shadeColor(a.color, -20)})`;
-
-  // Adapter la couleur du texte selon la luminosité du fond
-  const isLight = isLightColor(a.color);
-  const textColor = isLight ? '#1a1a1a' : 'white';
-  const shadowColor = isLight ? 'rgba(255,255,255,0.4)' : 'rgba(0,0,0,0.2)';
-  header.style.color = textColor;
-  document.getElementById('modal-name').style.color = textColor;
-  document.getElementById('modal-name').style.textShadow = `1px 1px 0 ${shadowColor}`;
-  document.getElementById('modal-habitat').style.color = textColor;
-  document.getElementById('modal-habitat').style.background = isLight ? 'rgba(0,0,0,0.12)' : 'rgba(255,255,255,0.3)';
-
   const emojiEl = document.getElementById('modal-emoji');
   header.classList.toggle('has-photo', !!a.image);
   if (a.image) {
-    // Photo en bandeau à la place du fond coloré, dégradé sombre en bas pour lire le texte blanc
-    // imagePos (optionnel dans animals.js) recadre la photo, ex. "30% center"
-    header.style.background = `linear-gradient(to bottom, rgba(0,0,0,0) 35%, rgba(0,0,0,0.7)), url("${a.image}") ${a.imagePos || 'center'} / cover no-repeat, ${a.color}`;
+    // Photo en bandeau à la place du fond coloré (le nom est affiché sous la photo)
+    // imagePos (optionnel dans animals.js) recadre la photo, ex. "center 12%"
+    header.style.background = `url("${a.image}") ${a.imagePos || 'center'} / cover no-repeat, ${a.color}`;
     emojiEl.innerHTML = '';
-    header.style.color = 'white';
-    document.getElementById('modal-name').style.color = 'white';
-    document.getElementById('modal-name').style.textShadow = '2px 2px 6px rgba(0,0,0,0.7)';
-    document.getElementById('modal-habitat').style.color = 'white';
-    document.getElementById('modal-habitat').style.background = 'rgba(0,0,0,0.35)';
   } else {
+    header.style.background = `linear-gradient(135deg, ${a.color}, ${shadeColor(a.color, -20)})`;
     emojiEl.innerHTML = a.emoji;
   }
   document.getElementById('modal-name').textContent = a.name;
@@ -160,6 +144,12 @@ function speakText(text) {
 // Lecture vocale : clic sur une pill ou un bloc info
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.modal-body').addEventListener('click', e => {
+    // Nom + habitat (lus sans les emojis)
+    if (e.target.closest('.modal-title')) {
+      const a = ANIMALS.find(x => x.id === currentAnimalId);
+      if (a) speakText(`${a.name}. ${a.habitat}`);
+      return;
+    }
     // Pill (classe, poids, origine…)
     const pill = e.target.closest('.info-pill');
     if (pill) {
