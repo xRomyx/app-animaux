@@ -93,9 +93,9 @@ function openModal(id) {
   const emojiEl = document.getElementById('modal-emoji');
   header.classList.toggle('has-photo', !!a.image);
   if (a.image) {
-    // Photo en bandeau à la place du fond coloré (le nom est affiché sous la photo)
-    // imagePos (optionnel dans animals.js) recadre la photo, ex. "center 12%"
-    header.style.background = `url("${a.image}") ${a.imagePos || 'center'} / cover no-repeat, ${a.color}`;
+    // Photo entière en bandeau (jamais coupée) ; la même photo floutée remplit les côtés — voir style.css
+    header.style.background = a.color;
+    header.style.setProperty('--photo', `url("${a.image}")`);
     emojiEl.innerHTML = '';
   } else {
     header.style.background = `linear-gradient(135deg, ${a.color}, ${shadeColor(a.color, -20)})`;

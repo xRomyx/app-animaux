@@ -1,10 +1,29 @@
 # Crédits des images
 
-Photos des animaux n°46 à 145 : Wikimedia Commons, réduites à 400 px de large.
+Images provenant de Wikimedia Commons, réduites à 800 px de large maximum.
 Chaque image reste sous sa licence d'origine (CC BY, CC BY-SA, CC0, GFDL ou domaine public).
+Les animaux absents de ce tableau utilisent les images d'origine du projet.
 
 | # | Animal | Fichier | Auteur | Licence | Source |
 |---|---|---|---|---|---|
+| 4 | Pieuvre commune | `img/pieuvre.jpg` | albert kok | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Octopus2.jpg) |
+| 5 | Caméléon de Parson | `img/Cameleon_de_Parson.jpg` | JialiangGao www.peace-on-earth.org | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Calumma_Parsonii_Ste_Marie_Madagascar.jpg) |
+| 6 | Axolotl | `img/axolotl.jpg` | Axolotover | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Leucistic.png) |
+| 7 | Tardigrade | `img/Tardigrade.jpg` | Schokraie E, Warnken U, Hotz-Wagenblatt A, Grohme MA, Hengherr S, et al. (2012) | CC BY 2.5 | [Commons](https://commons.wikimedia.org/wiki/File:SEM_image_of_Milnesium_tardigradum_in_active_state_-_journal.pone.0045682.g001-2_(white_background).png) |
+| 10 | Colibri | `img/Colibri.jpg` | Charles J. Sharp | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Anna%27s_hummingbird_(Calypte_anna)_male_in_flight_Campbell_River.jpg) |
+| 11 | Toucan | `img/toucan.jpg` | Giles Laurent | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg) |
+| 12 | Hibou grand-duc | `img/hibou-grand-duc.jpg` | Kamil.  Corrections: Piotr_J | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Bubo_bubo_winter_1.jpg) |
+| 13 | Aigle chauve | `img/aigle-chauve.jpg` | Andy  Morffew from Itchen Abbas, Hampshire, UK | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Bald_Eagle_(Haliaeetus_leucocephalus)_Kachemak_Bay,_Alaska.jpg) |
+| 16 | Tortue géante des Galápagos | `img/tortue-galapagos.jpg` | Mfield, Matthew Field, http://www.photography.mattfield.com | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Galapagos_giant_tortoise_Geochelone_elephantopus.jpg) |
+| 21 | Serpent à sonnette | `img/serpent-sonnette.jpg` | Gary Stolz (original) | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Crotalus_atrox_USFWS.jpg) |
+| 22 | Gecko tokay | `img/gecko-tokay.jpg` | MH Herpetology | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tokay_gecko_(Gekko_gecko).jpg) |
+| 24 | Gorille | `img/gorille.jpg` | Brocken Inaglory | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Male_gorilla_in_SF_zoo.jpg) |
+| 28 | Loup | `img/loup.jpg` | Ninara from Helsinki, Finland | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:%C3%84ht%C3%A4ri_Zoo,_Finland_(40264516234).jpg) |
+| 34 | Crocodile du Nil | `img/crocodile-du-nil.jpg` | Tim Muttoo | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Crocodylus_niloticus6.jpg) |
+| 37 | Tigre | `img/tigre.jpg` | Bjørn Christian Tørrissen | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tiger_in_Ranthambhore.jpg) |
+| 38 | Panda géant | `img/panda-geant.jpg` | J. Patrick Fischer | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Grosser_Panda.JPG) |
+| 39 | Koala | `img/koala.jpg` | Diliff | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg) |
+| 45 | Papillon Monarque | `img/papillon-monarque.jpg` | Photo by and (c)2007 Derek Ramsey (Ram-Man) | GFDL 1.2 | [Commons](https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg) |
 | 46 | Abeille domestique | `img/abeille-domestique.jpg` | Andreas Trepte | CC BY-SA 2.5 | [Commons](https://commons.wikimedia.org/wiki/File:Apis_mellifera_Western_honey_bee.jpg) |
 | 47 | Flamant rose | `img/flamant-rose.jpg` | Giles Laurent | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg) |
 | 48 | Autruche | `img/autruche.jpg` | Yathin S Krishnappa | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Struthio_camelus_-_Etosha_2014_(3).jpg) |
@@ -35,7 +54,7 @@ Chaque image reste sous sa licence d'origine (CC BY, CC BY-SA, CC0, GFDL ou doma
 | 73 | Pangolin | `img/pangolin.jpg` | U.S. Fish and Wildlife Service Headquarters | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Manis_temminckii_(29645803646).jpg) |
 | 74 | Okapi | `img/okapi.jpg` | Daniel Jolivet | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Saint-Aignan_(Loir-et-Cher)._Okapi.jpg) |
 | 75 | Aye-aye | `img/aye-aye.jpg` | nomis-simon | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Wild_aye_aye.jpg) |
-| 76 | Tatou géant | `img/tatou-geant.jpg` | Guillaume Delaitre | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Priodontes_maximus_at_R%C3%A9gina.jpg) |
+| 76 | Tatou géant | `img/tatou-geant.jpg` | Garst, Warren, 1922-2016, photographer | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Giant_armadillo_lying_in_grass_-_DPLA_-_48ea81d8d16cb83b4db8aa127752e34c.jpg) |
 | 77 | Fourmilier géant | `img/fourmilier-geant.jpg` | Malene Thyssen | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Myresluger2.jpg) |
 | 78 | Coucou gris | `img/coucou-gris.jpg` | Andy  Morffew from Itchen Abbas, Hampshire, UK | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Cuckoo_(51169010335).jpg) |
 | 79 | Lézard à collerette | `img/lezard-a-collerette.jpg` | Matt from Melbourne, Australia | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Frill-necked_Lizard_(Chlamydosaurus_kingii)_(8692622586).jpg) |
@@ -54,11 +73,11 @@ Chaque image reste sous sa licence d'origine (CC BY, CC BY-SA, CC0, GFDL ou doma
 | 92 | Chimpanzé | `img/chimpanze.jpg` | Giles Laurent | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg) |
 | 93 | Guépard | `img/guepard.jpg` | AfricanConservation | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Male_cheetah_facing_left_in_South_Africa.jpg) |
 | 94 | Lamantin | `img/lamantin.jpg` | Galen Rathbun | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Manatee_with_calf.PD_-_colour_corrected.jpg) |
-| 95 | Éléphant de mer | `img/elephant-de-mer.jpg` | Antoine Lamielle | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2020-11_Kerguelen_Islands_-_Southern_elephant_seal_30.jpg) |
+| 95 | Éléphant de mer | `img/elephant-de-mer.jpg` | Antoine Lamielle | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021-06_Amsterdam_Island_-_Southern_elephant_seal_10.jpg) |
 | 96 | Faucon pèlerin | `img/faucon-pelerin.jpg` | Mykola Swarnyk | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg) |
 | 97 | Wombat | `img/wombat.jpg` | JJ Harrison (jjharrison89@facebook.com) | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Vombatus_ursinus_-Maria_Island_National_Park.jpg) |
-| 98 | Murène | `img/murene.jpg` | Nhobgood Nick Hobgood | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Moray_eel_komodo.jpg) |
-| 99 | Loutre de mer | `img/loutre-de-mer.jpg` | Marshal Hedin from San Diego | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sea_Otter_(Enhydra_lutris)_(25169790524)_crop.jpg) |
+| 98 | Murène | `img/murene.jpg` | Fernando Losada Rodríguez | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Muraena_helena.002_-_Aquarium_Finisterrae.jpg) |
+| 99 | Loutre de mer | `img/loutre-de-mer.jpg` | Dave Bezaire & Susi Havens-Bezaire | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sea_Otters.jpg) |
 | 100 | Poisson-lune | `img/poisson-lune.jpg` | U.S. National Oceanic and Atmospheric Administration | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Mola_mola.jpg) |
 | 101 | Siphonophore | `img/siphonophore.jpg` | Seascapeza | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:String_jelly3a.jpg) |
 | 102 | Rat-taupe nu | `img/rat-taupe-nu.jpg` | Kein keen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Webs180130-rat.jpg) |
@@ -80,7 +99,7 @@ Chaque image reste sous sa licence d'origine (CC BY, CC BY-SA, CC0, GFDL ou doma
 | 118 | Hoazin | `img/hoazin.jpg` | Charles J. Sharp | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Hoatzin_(Opisthocomus_hoazin)_Rio_Napo.jpg) |
 | 119 | Mante orchidée | `img/mante-orchidee.jpg` | Luc Viatour | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mantis_Hymenopus_coronatus_6_Luc_Viatour.jpg) |
 | 120 | Poisson-pierre | `img/poisson-pierre.jpg` | Karelj | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Synanceia_verrucosa_Prague_2011_2.jpg) |
-| 121 | Dauphin rose de l'Amazone | `img/dauphin-rose-de-l-amazone.jpg` | Oceancetaceen | CC BY-SA 2.0 de | [Commons](https://commons.wikimedia.org/wiki/File:Amazonas-Flussdelfin_Orinoko3.jpg) |
+| 121 | Dauphin rose de l'Amazone | `img/dauphin-rose-de-l-amazone.jpg` | Dennis Otten | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Inia.jpg) |
 | 122 | Cigale périodique | `img/cigale-periodique.jpg` | peterwchen | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Magicicada_septendecim-female_ventral.jpg) |
 | 123 | Coléoptère du Namib | `img/coleoptere-du-namib.jpg` | Виктор Пинчук | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Onymacris_unguicularis_(Sudan).jpg) |
 | 124 | Crapaud surinamais | `img/crapaud-surinamais.jpg` | Hugo Claessen | CC BY-SA 2.5 | [Commons](https://commons.wikimedia.org/wiki/File:Pipa_pipa01.jpg) |
@@ -94,7 +113,7 @@ Chaque image reste sous sa licence d'origine (CC BY, CC BY-SA, CC0, GFDL ou doma
 | 132 | Kéa | `img/kea.jpg` | Mark Whatmough | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Nestor_notabilis_-Fiordland,_New_Zealand-8b.jpg) |
 | 133 | Musaraigne | `img/musaraigne.jpg` | Soricida | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sorex-araneus.jpg) |
 | 134 | Zorille | `img/zorille.jpg` | Garst, Warren, 1922-2016, photographer | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:African_polecat_walking_in_leaves_-_DPLA_-_fa39b9e9bcf1097e237ba8b92922c4eb.jpg) |
-| 135 | Tatou à neuf bandes | `img/tatou-a-neuf-bandes.jpg` | Aramburu Carlos | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Dasypus_novemcinctus_en_Zool%C3%B3gico_de_Paraguan%C3%A1.jpg) |
+| 135 | Tatou à neuf bandes | `img/tatou-a-neuf-bandes.jpg` | http://www.birdphotos.com | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Nine-banded_Armadillo.jpg) |
 | 136 | Salamandre géante de Chine | `img/salamandre-geante-de-chine.jpg` | Petr Hamerník | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Velemlok_%C4%8D%C3%ADnsk%C3%BD_zoo_praha_1.jpg) |
 | 137 | Lucane cerf-volant | `img/lucane-cerf-volant.jpg` | J.F. Gaffard | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Lucanus_cervus.jpg) |
 | 138 | Puffin des Anglais | `img/puffin-des-anglais.jpg` | Martin Reith | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Manx_Shearwater.JPG) |
@@ -105,19 +124,3 @@ Chaque image reste sous sa licence d'origine (CC BY, CC BY-SA, CC0, GFDL ou doma
 | 143 | Fossa | `img/fossa.jpg` | Ran Kirlian | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Cryptoprocta_Ferox.JPG) |
 | 144 | Piranha | `img/piranha.jpg` | H. Zell | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Pygocentrus_nattereri_-_Karlsruhe_Zoo_01.jpg) |
 | 145 | Ver luisant | `img/ver-luisant.jpg` | Hectonichus | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Lampyridae_-_Lampyris_noctiluca.JPG) |
-
-## Images d'origine remplacées (trop petites pour le bandeau)
-
-| # | Animal | Fichier | Auteur | Licence | Source |
-|---|---|---|---|---|---|
-| 4 | Pieuvre commune | `img/pieuvre.jpg` | albert kok | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Octopus2.jpg) |
-| 6 | Axolotl | `img/axolotl.jpg` | Axolotover | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Leucistic.png) |
-| 7 | Tardigrade | `img/Tardigrade.jpg` | Schokraie E, Warnken U, Hotz-Wagenblatt A, Grohme MA, Hengherr S, et al. (2012) | CC BY 2.5 | [Commons](https://commons.wikimedia.org/wiki/File:SEM_image_of_Milnesium_tardigradum_in_active_state_-_journal.pone.0045682.g001-2_(white_background).png) |
-| 10 | Colibri | `img/Colibri.jpg` | Charles J. Sharp | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Anna%27s_hummingbird_(Calypte_anna)_male_in_flight_Campbell_River.jpg) |
-| 11 | Toucan | `img/toucan.jpg` | Giles Laurent | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg) |
-| 16 | Tortue géante des Galápagos | `img/tortue-galapagos.jpg` | Mfield, Matthew Field, http://www.photography.mattfield.com | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Galapagos_giant_tortoise_Geochelone_elephantopus.jpg) |
-| 22 | Gecko tokay | `img/gecko-tokay.jpg` | MH Herpetology | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tokay_gecko_(Gekko_gecko).jpg) |
-| 24 | Gorille | `img/gorille.jpg` | Brocken Inaglory | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Male_gorilla_in_SF_zoo.jpg) |
-| 38 | Panda géant | `img/panda-geant.jpg` | J. Patrick Fischer | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Grosser_Panda.JPG) |
-| 39 | Koala | `img/koala.jpg` | Diliff | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg) |
-| 45 | Papillon Monarque | `img/papillon-monarque.jpg` | Photo by and (c)2007 Derek Ramsey (Ram-Man) | GFDL 1.2 | [Commons](https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg) |

@@ -42,7 +42,7 @@ const ANIMALS = [
     color:"#90EE90",weight:"700 g-1,4 kg",origin:"Madagascar (forêts humides de l'est)",
     diet:"Insectes, petits lézards, oisillons",
     social:"Solitaire (très territorial)",lifespan:"8-10 ans",
-    image:"img/Cameleon_de_Parson.jpg",imagePos:"center 15%"
+    image:"img/Cameleon_de_Parson.jpg"
   },
   {
     id:6,name:"Axolotl",emoji:"🦎",habitat:"Lacs du Mexique",habitatEmoji:"💧",
@@ -60,7 +60,7 @@ const ANIMALS = [
     color:"#F0E68C",weight:"~1 microgramme",origin:"Partout sur Terre (mousses, océans, déserts...)",
     diet:"Algues, bactéries, liquides cellulaires de plantes",
     social:"Solitaire (microscopique)",lifespan:"2-3 ans (actif)",
-    image:"img/Tardigrade.jpg",imagePos:"center 30%"
+    image:"img/Tardigrade.jpg"
   },
   {
     id:8,name:"Ornithorynque",emoji:"🦆",habitat:"Australie",habitatEmoji:"🌿",
@@ -105,7 +105,7 @@ const ANIMALS = [
     color:"#8B7355",weight:"1,5-4 kg",origin:"Europe, Asie, Afrique du Nord",
     diet:"Lapins, rongeurs, hérissons, oiseaux, reptiles",
     social:"Solitaire (couple stable et fidèle)",lifespan:"20-25 ans (sauvage)",
-    image:"img/hibou-grand-duc.jpg",imagePos:"center 25%"
+    image:"img/hibou-grand-duc.jpg"
   },
   {
     id:13,name:"Aigle chauve",emoji:"🦅",habitat:"Amérique du Nord",habitatEmoji:"🌲",
@@ -114,7 +114,7 @@ const ANIMALS = [
     color:"#8B4513",weight:"3-6,3 kg",origin:"Amérique du Nord (Canada → Mexique)",
     diet:"Poissons (90%), lapins, canards, charognes",
     social:"Solitaire (couple fidèle à vie)",lifespan:"20-30 ans (sauvage)",
-    image:"img/aigle-chauve.jpg",imagePos:"center 20%"
+    image:"img/aigle-chauve.jpg"
   },
   {
     id:14,name:"Baleine bleue",emoji:"🐋",habitat:"Océan",habitatEmoji:"🌊",
@@ -213,7 +213,7 @@ const ANIMALS = [
     color:"#4A4A4A",weight:"70-270 kg",origin:"Afrique centrale et équatoriale (RDC, Cameroun, Rwanda...)",
     diet:"Herbivore — feuilles, tiges, fruits, écorces",
     social:"En groupe (silverback + 5-30)",lifespan:"35-40 ans (sauvage)",
-    image:"img/gorille.jpg",imagePos:"center 5%"
+    image:"img/gorille.jpg"
   },
   {
     id:25,name:"Calamar géant",emoji:"🦑",habitat:"Océan profond",habitatEmoji:"🌑",
@@ -348,7 +348,7 @@ const ANIMALS = [
     color:"#A9A9A9",weight:"4-15 kg",origin:"Est et sud-est de l'Australie",
     diet:"Feuilles d'eucalyptus (500 g/jour, parmi 700 espèces)",
     social:"Solitaire (réseau d'arbres personnel)",lifespan:"10-15 ans (sauvage)",
-    image:"img/koala.jpg",imagePos:"center 5%"
+    image:"img/koala.jpg"
   },
   {
     id:40,name:"Kangourou roux",emoji:"🦘",habitat:"Australie",habitatEmoji:"🌿",
@@ -447,7 +447,7 @@ const ANIMALS = [
     color:"#008080",weight:"4-6 kg",origin:"Inde, Sri Lanka (introduit partout)",
     diet:"Graines, insectes, baies, petits reptiles, grenouilles",
     social:"En harem (1 mâle + 3-5 femelles)",lifespan:"15-20 ans",
-    image:"img/paon.jpg",imagePos:"center 12%"
+    image:"img/paon.jpg"
   },
   {
     id:51,name:"Dragon de Komodo",emoji:"🦎",habitat:"Indonésie",habitatEmoji:"🏝️",
@@ -636,7 +636,7 @@ const ANIMALS = [
     color:"#2F4F4F",weight:"3,6-6 kg",origin:"Antarctique et îles sub-antarctiques",
     diet:"Krill, poissons, calmars",
     social:"En colonie (jusqu'à 500 000 couples !)",lifespan:"11-20 ans",
-    image:"img/manchot-adelie.jpg",imagePos:"center 15%"
+    image:"img/manchot-adelie.jpg"
   },
   {
     id:72,name:"Poulpe géant du Pacifique",emoji:"🐙",habitat:"Océan Pacifique",habitatEmoji:"🌊",
@@ -816,7 +816,7 @@ const ANIMALS = [
     color:"#8B7355",weight:"10-21 kg",origin:"Île Maurice (océan Indien) — disparu vers 1693",
     diet:"Fruits, noix, graines, bulbes",
     social:"En petits groupes",lifespan:"Inconnue",
-    image:"img/dodo.jpg",imagePos:"center 12%"
+    image:"img/dodo.jpg"
   },
   {
     id:92,name:"Chimpanzé",emoji:"🐒",habitat:"Forêts d'Afrique centrale",habitatEmoji:"🌿",
@@ -861,7 +861,7 @@ const ANIMALS = [
     color:"#696969",weight:"0,3-1,5 kg",origin:"Tous les continents sauf Antarctique (villes + falaises)",
     diet:"Oiseaux en vol (pigeons, étourneaux, grives)",
     social:"Solitaire (couple stable)",lifespan:"15-20 ans",
-    image:"img/faucon-pelerin.jpg",imagePos:"center 10%"
+    image:"img/faucon-pelerin.jpg"
   },
   {
     id:97,name:"Wombat",emoji:"🐾",habitat:"Australie",habitatEmoji:"🌿",
@@ -1041,7 +1041,7 @@ const ANIMALS = [
     color:"#000000",weight:"50 g",origin:"Afrique subsaharienne (savane + broussailles)",
     diet:"Insectes (+ nourriture volée par duperie aux autres animaux)",
     social:"Solitaire (territorial)",lifespan:"5-6 ans",
-    image:"img/drongo-brillant.jpg",imagePos:"center 15%"
+    image:"img/drongo-brillant.jpg"
   },
   {
     id:117,name:"Oiseau jardinier",emoji:"🐦",habitat:"Australie & Nouvelle-Guinée",habitatEmoji:"🌿",
@@ -1059,7 +1059,7 @@ const ANIMALS = [
     color:"#8B4513",weight:"700-900 g",origin:"Amazonie, Orénoque, Guyanes",
     diet:"Feuilles, fleurs, fruits (tout fermenté dans le jabot)",
     social:"En groupes familiaux (6-15)",lifespan:"25-30 ans",
-    image:"img/hoazin.jpg",imagePos:"center 15%"
+    image:"img/hoazin.jpg"
   },
   {
     id:119,name:"Mante orchidée",emoji:"🌸",habitat:"Forêt tropicale d'Asie du Sud-Est",habitatEmoji:"🌴",
@@ -1167,7 +1167,7 @@ const ANIMALS = [
     color:"#8B7355",weight:"35-50 g",origin:"Afrique subsaharienne",
     diet:"Cire d'abeille, larves d'abeilles, insectes",
     social:"Solitaire (parasite de nid)",lifespan:"10-12 ans",
-    image:"img/indicateur-a-gorge-noire.jpg",imagePos:"center 0%"
+    image:"img/indicateur-a-gorge-noire.jpg"
   },
   {
     id:131,name:"Fourmi tisserande",emoji:"🐜",habitat:"Forêt tropicale d'Asie & Afrique",habitatEmoji:"🌴",
@@ -1275,7 +1275,7 @@ const ANIMALS = [
     color:"#8B7355",weight:"95-300 g",origin:"Afrique subsaharienne",
     diet:"Insectes, fruits, gomme d'arbre, petits vertébrés",
     social:"Solitaire (nocturne, territoires chevauchants)",lifespan:"12-16 ans",
-    image:"img/galago.jpg",imagePos:"center 10%"
+    image:"img/galago.jpg"
   },
   {
     id:143,name:"Fossa",emoji:"🐈",habitat:"Madagascar",habitatEmoji:"🌴",
