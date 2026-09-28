@@ -103,8 +103,17 @@ function openModal(id) {
   document.getElementById('modal-habitat').style.background = isLight ? 'rgba(0,0,0,0.12)' : 'rgba(255,255,255,0.3)';
 
   const emojiEl = document.getElementById('modal-emoji');
+  header.classList.toggle('has-photo', !!a.image);
   if (a.image) {
-    emojiEl.innerHTML = `<img class="modal-photo" src="${a.image}" alt="${a.name}" />`;
+    // Photo en bandeau à la place du fond coloré, dégradé sombre en bas pour lire le texte blanc
+    // imagePos (optionnel dans animals.js) recadre la photo, ex. "30% center"
+    header.style.background = `linear-gradient(to bottom, rgba(0,0,0,0) 35%, rgba(0,0,0,0.7)), url("${a.image}") ${a.imagePos || 'center'} / cover no-repeat, ${a.color}`;
+    emojiEl.innerHTML = '';
+    header.style.color = 'white';
+    document.getElementById('modal-name').style.color = 'white';
+    document.getElementById('modal-name').style.textShadow = '2px 2px 6px rgba(0,0,0,0.7)';
+    document.getElementById('modal-habitat').style.color = 'white';
+    document.getElementById('modal-habitat').style.background = 'rgba(0,0,0,0.35)';
   } else {
     emojiEl.innerHTML = a.emoji;
   }

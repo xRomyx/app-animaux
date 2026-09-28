@@ -447,7 +447,7 @@ const ANIMALS = [
     color:"#008080",weight:"4-6 kg",origin:"Inde, Sri Lanka (introduit partout)",
     diet:"Graines, insectes, baies, petits reptiles, grenouilles",
     social:"En harem (1 mâle + 3-5 femelles)",lifespan:"15-20 ans",
-    image:"img/paon.jpg"
+    image:"img/paon.jpg",imagePos:"center 12%"
   },
   {
     id:51,name:"Dragon de Komodo",emoji:"🦎",habitat:"Indonésie",habitatEmoji:"🏝️",
@@ -816,7 +816,7 @@ const ANIMALS = [
     color:"#8B7355",weight:"10-21 kg",origin:"Île Maurice (océan Indien) — disparu vers 1693",
     diet:"Fruits, noix, graines, bulbes",
     social:"En petits groupes",lifespan:"Inconnue",
-    image:"img/dodo.jpg"
+    image:"img/dodo.jpg",imagePos:"center 12%"
   },
   {
     id:92,name:"Chimpanzé",emoji:"🐒",habitat:"Forêts d'Afrique centrale",habitatEmoji:"🌿",
@@ -1041,7 +1041,7 @@ const ANIMALS = [
     color:"#000000",weight:"50 g",origin:"Afrique subsaharienne (savane + broussailles)",
     diet:"Insectes (+ nourriture volée par duperie aux autres animaux)",
     social:"Solitaire (territorial)",lifespan:"5-6 ans",
-    image:"img/drongo-brillant.jpg"
+    image:"img/drongo-brillant.jpg",imagePos:"center 15%"
   },
   {
     id:117,name:"Oiseau jardinier",emoji:"🐦",habitat:"Australie & Nouvelle-Guinée",habitatEmoji:"🌿",
@@ -1059,7 +1059,7 @@ const ANIMALS = [
     color:"#8B4513",weight:"700-900 g",origin:"Amazonie, Orénoque, Guyanes",
     diet:"Feuilles, fleurs, fruits (tout fermenté dans le jabot)",
     social:"En groupes familiaux (6-15)",lifespan:"25-30 ans",
-    image:"img/hoazin.jpg"
+    image:"img/hoazin.jpg",imagePos:"center 15%"
   },
   {
     id:119,name:"Mante orchidée",emoji:"🌸",habitat:"Forêt tropicale d'Asie du Sud-Est",habitatEmoji:"🌴",
@@ -1167,7 +1167,7 @@ const ANIMALS = [
     color:"#8B7355",weight:"35-50 g",origin:"Afrique subsaharienne",
     diet:"Cire d'abeille, larves d'abeilles, insectes",
     social:"Solitaire (parasite de nid)",lifespan:"10-12 ans",
-    image:"img/indicateur-a-gorge-noire.jpg"
+    image:"img/indicateur-a-gorge-noire.jpg",imagePos:"center 15%"
   },
   {
     id:131,name:"Fourmi tisserande",emoji:"🐜",habitat:"Forêt tropicale d'Asie & Afrique",habitatEmoji:"🌴",
