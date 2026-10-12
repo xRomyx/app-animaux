@@ -766,8 +766,8 @@ const ANIMALS = [
   },
   {
     id:86,name:"Requin fantôme",emoji:"🦈",habitat:"Océan profond",habitatEmoji:"🌑",
-    superpower:"Transparent dans le noir, il produit sa propre lumière par bioluminescence.",
-    fact:"Le requin fantôme est plus proche des raies que des vrais requins.",
+    superpower:"Son museau détecte l'électricité produite par ses proies, même dans le noir total.",
+    fact:"Le requin fantôme n'est ni un requin ni une raie : c'est leur cousin éloigné, séparé d'eux depuis près de 400 millions d'années.",
     color:"#E8E8E8",weight:"1-2,6 kg",origin:"Profondeurs océaniques mondiales",
     diet:"Poissons, céphalopodes, crustacés",
     social:"Solitaire",lifespan:"20-30 ans",

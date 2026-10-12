@@ -70,7 +70,8 @@ function renderGrid() {
     card.className = 'card';
     card.style.setProperty('--card-color', a.color);
     const visual = a.image
-      ? `<img class="animal-photo" src="${a.image}" alt="${a.name}" loading="lazy" />`
+      // Miniature légère (img/thumbs/, même nom de fichier) ; la grande photo ne se charge que dans la fiche
+      ? `<img class="animal-photo" src="${a.image.replace('img/', 'img/thumbs/')}" alt="${a.name}" loading="lazy" />`
       : `<span class="animal-emoji">${a.emoji}</span>`;
     card.innerHTML = `
       <span class="animal-id">#${a.id}</span>
@@ -225,6 +226,11 @@ document.getElementById('search-input').addEventListener('input', e => {
 function generateQuestions() {
   const questions = [];
   const shuffled = [...ANIMALS].sort(() => Math.random() - 0.5);
+  // Un autre animal tiré au hasard à chaque question (sinon la même fausse réponse revient toute la partie)
+  const pickOther = test => {
+    const pool = ANIMALS.filter(test);
+    return pool[Math.floor(Math.random() * pool.length)];
+  };
 
   shuffled.slice(0, 15).forEach(animal => {
     const type = Math.random() < 0.5 ? 'superpower' : 'habitat';
@@ -239,12 +245,12 @@ function generateQuestions() {
           explanation: `✅ C'est vrai ! ${animal.superpower}`
         });
       } else {
-        const other = shuffled.find(a => a.id !== animal.id);
+        const other = pickOther(a => a.id !== animal.id);
         questions.push({
           animal,
           text: `${animal.name} : « ${other.superpower} »`,
           answer: false,
-          explanation: `❌ Faux ! Ce super-pouvoir appartient au ${other.name}. Pour le ${animal.name} : ${animal.superpower}`
+          explanation: `❌ Faux ! Ce super-pouvoir est celui d'un autre animal : ${other.name}. Le vrai, pour ${animal.name} : ${animal.superpower}`
         });
       }
     } else {
@@ -252,17 +258,17 @@ function generateQuestions() {
       if (isTrue) {
         questions.push({
           animal,
-          text: `Le ${animal.name} habite : ${animal.habitat}`,
+          text: `${animal.name} — son habitat : ${animal.habitat}`,
           answer: true,
-          explanation: `✅ C'est vrai ! Le ${animal.name} vit bien dans : ${animal.habitat}`
+          explanation: `✅ C'est vrai ! ${animal.name} — son habitat : ${animal.habitat}`
         });
       } else {
-        const other = shuffled.find(a => a.id !== animal.id && a.habitat !== animal.habitat);
+        const other = pickOther(a => a.id !== animal.id && a.habitat !== animal.habitat);
         questions.push({
           animal,
-          text: `Le ${animal.name} habite : ${other ? other.habitat : 'la Lune'}`,
+          text: `${animal.name} — son habitat : ${other ? other.habitat : 'la Lune'}`,
           answer: false,
-          explanation: `❌ Faux ! Le ${animal.name} vit dans : ${animal.habitat}`
+          explanation: `❌ Faux ! ${animal.name} — son vrai habitat : ${animal.habitat}`
         });
       }
     }

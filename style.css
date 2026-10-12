@@ -355,12 +355,12 @@ nav {
 .close-btn:active { transform: scale(0.93); }
 
 /* ── PHOTOS RÉELLES ── */
+/* Miniature 4:3 : l'animal entier (le fond flouté est déjà dans l'image, voir img/thumbs/) */
 .animal-photo {
-  width: 80px;
-  height: 80px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid rgba(255,255,255,0.8);
+  border-radius: 14px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   margin: 4px auto 0;
   display: block;
