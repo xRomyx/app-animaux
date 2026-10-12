@@ -143,6 +143,8 @@ function openModal(id) {
   document.getElementById('modal-habitat').textContent = `${a.habitatEmoji} ${a.habitat}`;
   document.getElementById('modal-classe').textContent = a.classe || '—';
   document.getElementById('modal-weight').textContent = fixRange(a.weight || '—');
+  document.getElementById('modal-size').textContent = a.size || '—';
+  renderSizeComparison(a);
   document.getElementById('modal-origin').textContent = a.origin || '—';
   document.getElementById('modal-diet').textContent = a.diet || '—';
   document.getElementById('modal-social').textContent = fixRange(a.social || '—');
@@ -152,6 +154,46 @@ function openModal(id) {
 
   modal.classList.add('open');
   document.body.style.overflow = 'hidden';
+}
+
+// ── COMPARAISON DE TAILLE ──
+// Repère choisi selon la taille de l'animal : max = taille (cm) jusqu'à laquelle on utilise ce repère
+const SIZE_REFS = [
+  { max: 2,        emoji: '🍚', label: 'Grain de riz',    un: 'Un grain de riz',   de: "d'un grain de riz",   fem: false, cm: 0.6,  txt: '6 mm' },
+  { max: 30,       emoji: '✋', label: "Main d'enfant",   un: "Une main d'enfant", de: "d'une main d'enfant", fem: true,  cm: 15,   txt: '15 cm' },
+  { max: 600,      emoji: '🧒', label: 'Enfant de 7 ans', un: 'Un enfant',         de: "d'un enfant",         fem: false, cm: 120,  txt: '1,20 m' },
+  { max: Infinity, emoji: '🚌', label: 'Bus',             un: 'Un bus',            de: "d'un bus",            fem: false, cm: 1200, txt: '12 m' }
+];
+
+function sizeSentence(sizeCm, ref) {
+  const r = sizeCm / ref.cm;
+  if (r >= 1.75) return `C'est environ ${Math.round(r)} fois la taille ${ref.de}.`;
+  if (r >= 1.3) return `C'est environ une fois et demie la taille ${ref.de}.`;
+  if (r > 0.77) return `C'est à peu près la taille ${ref.de}.`;
+  const grand = ref.fem ? 'grande' : 'grand';
+  if (r > 0.57) return `${ref.un} est environ une fois et demie plus ${grand}.`;
+  return `${ref.un} est environ ${Math.round(1 / r)} fois plus ${grand}.`;
+}
+
+function renderSizeComparison(a) {
+  const block = document.getElementById('modal-size-block');
+  if (!a.sizeCm) { block.style.display = 'none'; return; }
+  block.style.display = '';
+
+  const ref = SIZE_REFS.find(r => a.sizeCm <= r.max);
+  const biggest = Math.max(a.sizeCm, ref.cm);
+  // Largeur minimale de 4 % pour que la plus petite barre reste visible
+  const width = cm => Math.max(4, Math.round((cm / biggest) * 100)) + '%';
+  const row = (emoji, label, cm, color) => `
+    <div class="size-row">
+      <span class="size-row-label">${emoji} ${label}</span>
+      <span class="size-bar-track"><span class="size-bar" style="width:${width(cm)};background:${color}"></span></span>
+    </div>`;
+
+  document.getElementById('modal-size-bars').innerHTML =
+    row(a.emoji, a.name, a.sizeCm, shadeColor(a.color, -20)) +
+    row(ref.emoji, `${ref.label} (${ref.txt})`, ref.cm, '#b2bec3');
+  document.getElementById('modal-size-text').textContent = sizeSentence(a.sizeCm, ref);
 }
 
 function closeModal() {

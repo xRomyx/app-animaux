@@ -850,6 +850,31 @@ nav {
   line-height: 1;
 }
 
+/* ── COMPARAISON DE TAILLE ── */
+.size-row { margin-bottom: 8px; }
+
+.size-row-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+
+.size-bar-track {
+  display: block;
+  background: #e9ecef;
+  border-radius: 50px;
+  height: 14px;
+  overflow: hidden;
+}
+
+.size-bar {
+  display: block;
+  height: 100%;
+  border-radius: 50px;
+}
+
 /* ── ANIMATIONS ── */
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes slideUp {
