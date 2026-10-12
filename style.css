@@ -765,6 +765,91 @@ nav {
 
 .restart-btn:hover { transform: scale(1.05); background: #ff5252; }
 
+.change-game-btn {
+  background: #f0f0f0;
+  color: var(--text);
+  margin-top: 12px;
+}
+
+.change-game-btn:hover { background: #e4e4e4; }
+
+/* ── QUIZ : choix du jeu ── */
+.quiz-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.quiz-menu-btn {
+  background: white;
+  border: 3px solid #e0e0e0;
+  border-radius: var(--radius);
+  padding: 28px 16px;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+
+.quiz-menu-btn:hover { transform: scale(1.03); border-color: var(--secondary); }
+.quiz-menu-btn:active { transform: scale(0.97); }
+.quiz-menu-emoji { font-size: 3.5rem; line-height: 1; }
+.quiz-menu-title { font-size: 1.4rem; font-weight: 900; color: var(--text); }
+.quiz-menu-sub { font-size: 0.9rem; font-weight: 700; color: var(--text-light); }
+
+/* ── QUIZ « Qui est-ce ? » ── */
+.question-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;         /* animal entier, jamais coupé */
+  background: #eef1f6;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.choice-buttons {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* ── FAVORIS ── */
+.fav-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: white;
+  border: 3px solid white;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  transition: transform 0.15s;
+}
+
+.fav-btn:active { transform: scale(0.9); }
+.fav-btn.active { animation: bounce 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); }
+
+.card-fav {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
 /* ── ANIMATIONS ── */
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes slideUp {

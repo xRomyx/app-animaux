@@ -57,9 +57,26 @@
   ═══════════════════════════════════════════ -->
   <div id="quiz-section">
     <div class="quiz-header">
-      <h2>🧠 Quiz — Vrai ou Faux ?</h2>
+      <h2 id="quiz-title">🧠 Quiz</h2>
       <p style="color:#636E72;font-size:0.95rem;margin-top:4px;">Teste tes connaissances sur les animaux !</p>
     </div>
+
+    <!-- Choix du jeu -->
+    <div class="quiz-menu" id="quiz-menu">
+      <button class="quiz-menu-btn" onclick="startQuiz('photo')">
+        <span class="quiz-menu-emoji">📸</span>
+        <span class="quiz-menu-title">Qui est-ce ?</span>
+        <span class="quiz-menu-sub">Regarde la photo et trouve l'animal</span>
+      </button>
+      <button class="quiz-menu-btn" onclick="startQuiz('vf')">
+        <span class="quiz-menu-emoji">🎯</span>
+        <span class="quiz-menu-title">Vrai ou Faux ?</span>
+        <span class="quiz-menu-sub">Lis la phrase et décide</span>
+      </button>
+    </div>
+
+    <!-- Jeu en cours (caché tant qu'aucun jeu n'est choisi) -->
+    <div id="quiz-game" style="display:none">
 
     <!-- Score -->
     <div class="score-display">
@@ -82,6 +99,7 @@
     <!-- Question Card -->
     <div class="question-card" id="question-card">
       <span class="question-animal" id="q-emoji">🦁</span>
+      <img class="question-photo" id="q-photo" alt="" />
       <div class="question-animal-name" id="q-animal-name">Lion</div>
       <div class="question-type-badge" id="q-type">🎯 Vrai ou Faux ?</div>
       <div class="question-text" id="q-text">...</div>
@@ -91,6 +109,9 @@
         <button class="answer-btn" id="btn-true" onclick="answer(true)">✅ Vrai</button>
         <button class="answer-btn" id="btn-false" onclick="answer(false)">❌ Faux</button>
       </div>
+
+      <!-- Quiz « Qui est-ce ? » : 3 noms au choix -->
+      <div class="choice-buttons" id="choice-buttons"></div>
 
       <div class="feedback-message" id="quiz-feedback"></div>
       <button class="next-question-btn" id="next-btn" onclick="nextQuestion()">
@@ -105,7 +126,10 @@
       <div class="final-score" id="final-score">12 / 15</div>
       <p id="final-pct">soit 80% de bonnes réponses</p>
       <button class="restart-btn" onclick="startQuiz()">🔄 Rejouer !</button>
+      <button class="restart-btn change-game-btn" onclick="showQuizMenu()">🎮 Changer de jeu</button>
     </div>
+
+    </div><!-- /quiz-game -->
   </div>
 
   <!-- ═══════════════════════════════════════════
@@ -115,6 +139,7 @@
     <div class="modal">
       <div class="modal-header" id="modal-header">
         <button class="close-btn" onclick="closeModal()">✕</button>
+        <button class="fav-btn" id="fav-btn" onclick="toggleFavorite()" aria-label="Ajouter aux favoris">🤍</button>
         <span class="big-emoji" id="modal-emoji">🦁</span>
       </div>
 

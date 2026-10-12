@@ -3,7 +3,38 @@ let currentView = 'explorer';
 let searchQuery = '';
 let activeHabitat = '🗺️ Tous';
 let currentAnimalId = null;
-let quiz = { questions: [], current: 0, correct: 0, wrong: 0, answered: false };
+let quiz = { mode: 'vf', questions: [], current: 0, correct: 0, wrong: 0, answered: false };
+
+// ── FAVORIS (enregistrés dans l'appareil, pas partagés entre appareils) ──
+const FAV_KEY = 'animaux-favoris';
+const FAV_FILTER = '❤️ Favoris';
+let favorites = loadFavorites();
+
+function loadFavorites() {
+  try { return JSON.parse(localStorage.getItem(FAV_KEY)) || []; } catch (e) { return []; }
+}
+
+function isFavorite(id) {
+  return favorites.includes(id);
+}
+
+function toggleFavorite() {
+  if (currentAnimalId === null) return;
+  favorites = isFavorite(currentAnimalId)
+    ? favorites.filter(id => id !== currentAnimalId)
+    : [...favorites, currentAnimalId];
+  try { localStorage.setItem(FAV_KEY, JSON.stringify(favorites)); } catch (e) {}
+  updateFavButton();
+  renderGrid();
+}
+
+function updateFavButton() {
+  const fav = isFavorite(currentAnimalId);
+  const btn = document.getElementById('fav-btn');
+  btn.textContent = fav ? '❤️' : '🤍';
+  btn.classList.toggle('active', fav);
+  btn.setAttribute('aria-label', fav ? 'Retirer des favoris' : 'Ajouter aux favoris');
+}
 
 // ── INIT ──
 document.addEventListener('DOMContentLoaded', () => {
@@ -19,12 +50,12 @@ function switchView(view) {
   document.querySelector(`[data-view="${view}"]`).classList.add('active');
   document.getElementById('explorer-section').style.display = view === 'explorer' ? 'block' : 'none';
   document.getElementById('quiz-section').style.display = view === 'quiz' ? 'block' : 'none';
-  if (view === 'quiz') startQuiz();
+  if (view === 'quiz') showQuizMenu();
 }
 
 // ── CONTINENT FILTERS ──
 function getContinents() {
-  return ['🗺️ Tous', ...Object.keys(CONTINENT_IDS)];
+  return ['🗺️ Tous', FAV_FILTER, ...Object.keys(CONTINENT_IDS)];
 }
 
 function renderFilters() {
@@ -49,7 +80,8 @@ function getFilteredAnimals() {
     const matchSearch = a.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
                         a.habitat.toLowerCase().includes(searchQuery.toLowerCase()) ||
                         a.superpower.toLowerCase().includes(searchQuery.toLowerCase());
-    const matchHabitat = activeHabitat === '🗺️ Tous' || a.continent === activeHabitat;
+    const matchHabitat = activeHabitat === '🗺️ Tous' ||
+                         (activeHabitat === FAV_FILTER ? isFavorite(a.id) : a.continent === activeHabitat);
     return matchSearch && matchHabitat;
   });
 }
@@ -61,7 +93,9 @@ function renderGrid() {
   grid.innerHTML = '';
 
   if (animals.length === 0) {
-    grid.innerHTML = `<div class="empty-state"><div class="empty-emoji">🔍</div><p>Aucun animal trouvé.<br>Essaie un autre mot !</p></div>`;
+    grid.innerHTML = activeHabitat === FAV_FILTER && favorites.length === 0
+      ? `<div class="empty-state"><div class="empty-emoji">🤍</div><p>Tu n'as pas encore de favori.<br>Ouvre un animal et appuie sur le cœur !</p></div>`
+      : `<div class="empty-state"><div class="empty-emoji">🔍</div><p>Aucun animal trouvé.<br>Essaie un autre mot !</p></div>`;
     return;
   }
 
@@ -75,6 +109,7 @@ function renderGrid() {
       : `<span class="animal-emoji">${a.emoji}</span>`;
     card.innerHTML = `
       <span class="animal-id">#${a.id}</span>
+      ${isFavorite(a.id) ? '<span class="card-fav">❤️</span>' : ''}
       ${visual}
       <div class="animal-name">${a.name}</div>
       <span class="animal-habitat-tag">${a.habitatEmoji} ${a.habitat}</span>
@@ -90,6 +125,8 @@ function openModal(id) {
   const a = ANIMALS.find(x => x.id === id);
   const modal = document.getElementById('animal-modal');
   const header = document.getElementById('modal-header');
+
+  updateFavButton();
 
   const emojiEl = document.getElementById('modal-emoji');
   header.classList.toggle('has-photo', !!a.image);
@@ -205,7 +242,10 @@ document.addEventListener('keydown', e => {
 // Bouton écouter le quiz
 function speakQuizQuestion() {
   const text = document.getElementById('q-text').textContent;
-  if (text) speakText(text);
+  // « Qui est-ce ? » : on lit aussi les trois noms proposés
+  const q = quiz.questions[quiz.current];
+  const choices = quiz.mode === 'photo' && q ? ' ' + q.choices.map(c => c.name).join(', ') + ' ?' : '';
+  if (text) speakText(text + choices);
 }
 
 // Clic sur le feedback pour le relire
@@ -281,8 +321,32 @@ function setupQuiz() {
   quiz.questions = generateQuestions();
 }
 
-function startQuiz() {
-  quiz.questions = generateQuestions();
+// Quiz « Qui est-ce ? » : une photo, trois noms au choix
+function generatePhotoQuestions() {
+  const shuffle = list => [...list].sort(() => Math.random() - 0.5);
+  const withPhoto = ANIMALS.filter(a => a.image);
+  return shuffle(withPhoto).slice(0, 10).map(animal => {
+    const others = shuffle(withPhoto.filter(a => a.id !== animal.id)).slice(0, 2);
+    return { animal, choices: shuffle([animal, ...others]) };
+  });
+}
+
+// Écran de choix du jeu
+function showQuizMenu() {
+  if (window.speechSynthesis) window.speechSynthesis.cancel();
+  document.getElementById('quiz-title').textContent = '🧠 Quiz';
+  document.getElementById('quiz-menu').style.display = '';
+  document.getElementById('quiz-game').style.display = 'none';
+}
+
+// mode : 'vf' ou 'photo' ; sans argument (bouton Rejouer) on garde le jeu en cours
+function startQuiz(mode) {
+  if (mode) quiz.mode = mode;
+  const isPhoto = quiz.mode === 'photo';
+  document.getElementById('quiz-title').textContent = isPhoto ? '📸 Quiz — Qui est-ce ?' : '🧠 Quiz — Vrai ou Faux ?';
+  document.getElementById('quiz-menu').style.display = 'none';
+  document.getElementById('quiz-game').style.display = '';
+  quiz.questions = isPhoto ? generatePhotoQuestions() : generateQuestions();
   quiz.current = 0;
   quiz.correct = 0;
   quiz.wrong = 0;
@@ -302,10 +366,35 @@ function renderQuestion() {
   const q = quiz.questions[quiz.current];
   quiz.answered = false;
 
-  document.getElementById('q-emoji').textContent = q.animal.emoji;
-  document.getElementById('q-animal-name').textContent = q.animal.name;
-  document.getElementById('q-text').textContent = q.text;
-  document.getElementById('q-type').textContent = '🎯 Vrai ou Faux ?';
+  // Selon le jeu : emoji + nom + Vrai/Faux, ou photo + trois noms
+  const isPhoto = quiz.mode === 'photo';
+  document.getElementById('q-emoji').style.display = isPhoto ? 'none' : '';
+  document.getElementById('q-animal-name').style.display = isPhoto ? 'none' : '';
+  document.querySelector('.answer-buttons').style.display = isPhoto ? 'none' : '';
+  const photo = document.getElementById('q-photo');
+  const choices = document.getElementById('choice-buttons');
+  photo.style.display = isPhoto ? '' : 'none';
+  choices.style.display = isPhoto ? '' : 'none';
+  choices.innerHTML = '';
+
+  if (isPhoto) {
+    photo.src = q.animal.image;
+    document.getElementById('q-text').textContent = 'Qui est cet animal ?';
+    document.getElementById('q-type').textContent = '📸 Qui est-ce ?';
+    q.choices.forEach(c => {
+      const btn = document.createElement('button');
+      btn.className = 'answer-btn';
+      btn.textContent = c.name;
+      btn.dataset.id = c.id;
+      btn.onclick = () => answerChoice(c.id);
+      choices.appendChild(btn);
+    });
+  } else {
+    document.getElementById('q-emoji').textContent = q.animal.emoji;
+    document.getElementById('q-animal-name').textContent = q.animal.name;
+    document.getElementById('q-text').textContent = q.text;
+    document.getElementById('q-type').textContent = '🎯 Vrai ou Faux ?';
+  }
 
   const progress = (quiz.current / quiz.questions.length) * 100;
   document.getElementById('progress-fill').style.width = progress + '%';
@@ -360,6 +449,33 @@ function answer(value) {
   document.getElementById('next-btn').className = 'next-question-btn show';
 }
 
+// Réponse au quiz « Qui est-ce ? »
+function answerChoice(id) {
+  if (quiz.answered) return;
+  quiz.answered = true;
+
+  const q = quiz.questions[quiz.current];
+  const isCorrect = id === q.animal.id;
+
+  document.querySelectorAll('#choice-buttons .answer-btn').forEach(btn => {
+    btn.disabled = true;
+    const btnId = Number(btn.dataset.id);
+    if (btnId === q.animal.id) btn.classList.add('correct');
+    else if (btnId === id) btn.classList.add('wrong');
+  });
+
+  if (isCorrect) quiz.correct++; else quiz.wrong++;
+  updateScoreDisplay();
+
+  const text = isCorrect ? `Bravo ! C'est bien : ${q.animal.name}` : `Raté ! C'était : ${q.animal.name}`;
+  const feedback = document.getElementById('quiz-feedback');
+  feedback.textContent = (isCorrect ? '✅ ' : '❌ ') + text;
+  feedback.className = 'feedback-message show ' + (isCorrect ? 'feedback-correct' : 'feedback-wrong');
+  speakText(text);
+
+  document.getElementById('next-btn').className = 'next-question-btn show';
+}
+
 function nextQuestion() {
   quiz.current++;
   renderQuestion();
@@ -378,8 +494,8 @@ function showQuizEnd() {
   const pct = Math.round((quiz.correct / quiz.questions.length) * 100);
   let trophy = '🥉', msg = 'Continue à apprendre !';
   if (pct >= 80) { trophy = '🏆'; msg = 'Excellent ! Tu es un expert des animaux !'; }
-  else if (pct >= 60) { trophy = '🥈'; msg = 'Très bien ! Tu connais bien les animaux !'; }
-  else if (pct >= 40) { trophy = '🥇'; msg = 'Pas mal ! Encore un peu de pratique !'; }
+  else if (pct >= 60) { trophy = '🥇'; msg = 'Très bien ! Tu connais bien les animaux !'; }
+  else if (pct >= 40) { trophy = '🥈'; msg = 'Pas mal ! Encore un peu de pratique !'; }
 
   document.getElementById('trophy-emoji').textContent = trophy;
   document.getElementById('end-message').textContent = msg;
